@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutz — CheersOida</title>
+  <meta name="description" content="Was CheersOida sammelt, speichert, anderen zeigt — und wie du alles löschen kannst.">
+  <meta name="theme-color" content="#0B1220">
+  <link rel="icon" href="../assets/appicon.jpg">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="../">CheersOida</a>
+    <div class="nav__links">
+      <a href="../#funktionen">Funktionen</a>
+      <a href="../#faq">FAQ</a>
+      <a href="../privacy.html" lang="en">EN</a>
+      <a class="nav__cta" href="../#holen">App laden</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <div class="container prose">
+      <h1>Datenschutz</h1>
+      <p class="updated">Zuletzt aktualisiert: 19.09.2026</p>
+
+      <p>CheersOida ist eine kleine App von einer einzelnen Entwicklerin. Diese Seite sagt genau, was die App mit deinen Daten macht — kein Boilerplate, keine „Wir teilen mit Partnern"-Sprache, weil es keine Partner gibt.</p>
+
+      <h2>Was wir erheben</h2>
+
+      <h3>Konto</h3>
+      <p>E-Mail-Adresse und ein Benutzername, den du bei der Anmeldung wählst. Die E-Mail dient der Passwort-Wiederherstellung und der optionalen TestFlight-/Einladungs-Übergabe. Der Benutzername ist das, was deine Freunde sehen.</p>
+
+      <h3>GPS-Track</h3>
+      <p>Solange eine Crawl-Session aktiv ist und nur mit deiner Erlaubnis („Beim Verwenden der App" auf iOS, plus Android Foreground-Service) sampelt die App etwa einmal pro Sekunde deinen Standort. Der Roh-Track wird nur auf dem Gerät gespeichert, bis du den Crawl beendest, und dann zum Server hochgeladen.</p>
+      <p>Deine Freunde sehen den Roh-Track <strong>niemals</strong>. Wenn ein Crawl endet, behält der Server eine einzelne vereinfachte Route (ein Punkt pro ~50 m), die zur beendeten Session gehört. Während der Session existiert die vereinfachte Route noch nicht — Freunde sehen „seit 21:30 unterwegs, 3 Drinks" und sonst nichts.</p>
+
+      <h3>Check-ins</h3>
+      <p>Jeder Check-in speichert das eingetragene Getränk, einen optionalen Ort („wo"), ein optionales Foto, eine optionale Notiz und den Zeitstempel. Fotos werden privat mit Row-Level-Security gespeichert — nur du und deine akzeptierten Freunde sehen sie.</p>
+
+      <h3>Freunde</h3>
+      <p>Eine Liste der Benutzernamen, mit denen du befreundet bist. Die Liste ist privat für dich.</p>
+
+      <h3>Push-Benachrichtigungen</h3>
+      <p>Ein Expo-Push-Token, nur wenn du die Benachrichtigungs-Erlaubnis erteilst. Das Token dient zum Senden von Prost-, Freundschafts- und Antwort-Benachrichtigungen. Du kannst Benachrichtigungen in den Einstellungen deines Telefons widerrufen; das Token wird beim nächsten Öffnen der App vom Server entfernt.</p>
+
+      <h2>Wer was sieht</h2>
+      <ul>
+        <li><strong>Roh-GPS-Track:</strong> nur du.</li>
+        <li><strong>Vereinfachte Route eines beendeten Crawls:</strong> deine akzeptierten Freunde.</li>
+        <li><strong>Check-ins:</strong> deine akzeptierten Freunde.</li>
+        <li><strong>Profil (Benutzername + Stats):</strong> deine akzeptierten Freunde.</li>
+        <li><strong>Konto-E-Mail:</strong> nur CheersOida (nirgends in der App sichtbar).</li>
+      </ul>
+
+      <h2>Wo die Daten liegen</h2>
+      <p>Gehostet bei Supabase (Region Frankfurt, EU). Fotos liegen in einem Supabase-Storage-Bucket namens <code>photos</code> mit an deine Account-ID gebundener Row-Level-Security. Backups verwaltet Supabase; nichts verlässt die EU-Region.</p>
+
+      <h2>Analyse</h2>
+      <p>Es gibt kein Analyse-SDK. Kein Google Analytics, kein Plausible, kein Sentry, kein Facebook-Pixel. Die einzigen Server-Logs sind Supabase-eigene Request-Logs (Auth, RPC, Storage), aufbewahrt für ~7 Tage.</p>
+
+      <h2>Daten löschen</h2>
+      <p>In der App: <em>Profil → Einstellungen → Konto löschen.</em> Das entfernt dein Konto, alle Check-ins, alle Fotos, alle Freundschaften, den Roh-GPS-Track und die vereinfachten Routen vergangener Crawls. Endgültig und sofort.</p>
+      <p>Wenn du die App nicht öffnen kannst, schreibe von der Konto-E-Mail an <a href="mailto:cheer@saustall.cloud">cheer@saustall.cloud</a> und bitte um manuelle Löschung. Passiert innerhalb von sieben Tagen, meistens am selben Tag.</p>
+
+      <h2>Kinder</h2>
+      <p>Die App richtet sich nicht an Kinder unter 16. Wenn du glaubst, dass ein Kind ein Konto angelegt hat, kontaktiere die untenstehende Adresse und es wird gelöscht.</p>
+
+      <h2>Änderungen an dieser Erklärung</h2>
+      <p>Wenn sich hier etwas ändert, das beeinflusst, was erhoben oder wer es sehen darf, zeigt der nächste App-Start die aktualisierte Erklärung und verlangt eine Bestätigung, bevor du die betroffene Funktion nutzen kannst.</p>
+
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:cheer@saustall.cloud">cheer@saustall.cloud</a>. Quellcode: <a href="https://github.com/checkelmann/CheersOida">github.com/checkelmann/CheersOida</a>.</p>
+
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot__inner">
+    <div>© 2026 CheersOida</div>
+    <div class="foot__links">
+      <a href="../">Startseite</a>
+      <a href="https://github.com/checkelmann/CheersOida">CheersOida-Repo</a>
+      <a href="https://github.com/checkelmann/cheersoida-website">Website-Repo</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
