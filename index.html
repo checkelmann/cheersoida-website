@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CheersOida — Track the night. Cheer the friends.</title>
+  <meta name="description" content="CheersOida logs your bar-crawl route, detects when you arrive at each bar, and lets your friends send a Cheers the moment they see what you're drinking.">
+  <meta name="theme-color" content="#0B1220">
+
+  <meta property="og:title" content="CheersOida">
+  <meta property="og:description" content="Track the night. Cheer the friends along the way.">
+  <meta property="og:image" content="https://checkelmann.github.io/cheersoida-website/assets/og-image.png">
+  <meta property="og:url" content="https://checkelmann.github.io/cheersoida-website/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/appicon.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/">CheersOida</a>
+    <div class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="de/" lang="de">DE</a>
+      <a class="nav__cta" href="#get">Get the app</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <h1>Track the night.<br><span class="accent">Cheer</span> the friends along the way.</h1>
+        <p class="hero__lede">CheersOida logs your bar-crawl route, detects when you arrive at each bar, and lets your friends send a <strong>Cheers</strong> the moment they see what you're drinking.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#get">Get the app</a>
+          <a class="btn btn--secondary" href="#how">How it works ↓</a>
+        </div>
+      </div>
+      <div class="map" aria-hidden="true">
+        <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Stylised map with a walking route and three venue pins">
+          <defs>
+            <radialGradient id="glow" cx="30%" cy="70%" r="60%">
+              <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="320" height="240" fill="url(#glow)"/>
+          <polyline fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            points="20,200 60,170 90,150 130,120 170,110 210,80 260,60 300,40" opacity="0.9"/>
+          <g>
+            <circle cx="20" cy="200" r="14" fill="#F59E0B" fill-opacity="0.18"/>
+            <circle cx="20" cy="200" r="5" fill="#F59E0B"/>
+          </g>
+          <g>
+            <circle cx="170" cy="110" r="14" fill="#F59E0B" fill-opacity="0.18"/>
+            <circle cx="170" cy="110" r="5" fill="#F59E0B"/>
+            <text x="184" y="106" fill="#FBBF24" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="1.5">BAR STOP</text>
+          </g>
+          <g>
+            <circle cx="300" cy="40" r="14" fill="#F59E0B" fill-opacity="0.18"/>
+            <circle cx="300" cy="40" r="5" fill="#F59E0B"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="stats" aria-label="Stats from a typical crawl">
+      <div class="stat">
+        <div class="stat__num">3.2<span class="unit">km</span></div>
+        <div class="stat__label">Distance walked</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">4</div>
+        <div class="stat__label">Venues visited</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">2.1<span class="unit">/h</span></div>
+        <div class="stat__label">Drinks per hour</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2 class="section-h">How a night goes</h2>
+    <p class="section-sub">Three things happen, in order. The app handles the boring parts.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">01</div>
+        <div class="step__title">Start a crawl</div>
+        <div class="step__body">Tap <strong>Start</strong> when the night begins. The app keeps a time-based GPS log while you walk — battery is the only cost.</div>
+      </div>
+      <div class="step">
+        <div class="step__num">02</div>
+        <div class="step__title">Arrive, get detected</div>
+        <div class="step__body">When you actually stop at a bar — not just pass one — the app adds it to your crawl. No taps required.</div>
+      </div>
+      <div class="step">
+        <div class="step__num">03</div>
+        <div class="step__title">Check in. Friends cheer.</div>
+        <div class="step__body">Tap a drink to log it. Friends see the check-in in real time and can send a Cheers or a message.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <h2 class="section-h">What's in it</h2>
+    <p class="section-sub">The pieces that make CheersOida more than a check-in app.</p>
+    <div class="features">
+      <div class="feature">
+        <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div class="feature__title">Real route recording</div>
+        <div class="feature__body">Time-sampled GPS logs every second. Distance, dwell, and venue arrivals fall out of it.</div>
+      </div>
+      <div class="feature">
+        <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <div class="feature__title">Dwell detection</div>
+        <div class="feature__body">Stops are detected, not tapped. The app tells "arrived at a bar" from "walked past one."</div>
+      </div>
+      <div class="feature">
+        <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div class="feature__title">Friends &amp; Cheers</div>
+        <div class="feature__body">A friend-only feed, real-time cheers on each drink, push notifications with reply actions.</div>
+      </div>
+      <div class="feature">
+        <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg></span>
+        <div class="feature__title">German &amp; English</div>
+        <div class="feature__body">Built bilingual from the first screen. Same UI, copy, and notification actions in DE and EN.</div>
+      </div>
+      <div class="feature">
+        <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg></span>
+        <div class="feature__title">Offline-first</div>
+        <div class="feature__body">GPS, check-ins, and photos queue locally and sync when the bar's Wi-Fi finally gives up.</div>
+      </div>
+      <div class="feature">
+        <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+        <div class="feature__title">Privacy by default</div>
+        <div class="feature__body">Raw GPS trace is owner-only. Friends see the simplified route, published once when the crawl ends.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-h">A look at the app</h2>
+    <p class="section-sub">Three screens from a real session.</p>
+    <div class="shots">
+      <div class="shot"><img src="assets/screenshots/screen-01.png" alt="CheersOida live crawl screen with route map" loading="lazy"></div>
+      <div class="shot"><img src="assets/screenshots/screen-02.png" alt="CheersOida activity detail with friends and cheers" loading="lazy"></div>
+      <div class="shot"><img src="assets/screenshots/screen-03.png" alt="CheersOida feed showing a friend's check-in" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <h2 class="section-h">Questions</h2>
+    <p class="section-sub">The honest short answers.</p>
+    <div class="faq">
+
+      <details class="faq__item" id="faq-data">
+        <summary class="faq__q">What data does the app collect?</summary>
+        <div class="faq__a">
+          <p>An account (email, username), a time-sampled GPS trace <em>while a crawl is active</em>, check-ins you create, photos you attach, your friend list, and a push-notification token. The full breakdown is on the <a href="privacy.html">privacy page</a>.</p>
+        </div>
+      </details>
+
+      <details class="faq__item" id="faq-route">
+        <summary class="faq__q">Can my friends see my route while I'm still crawling?</summary>
+        <div class="faq__a">
+          <p>No. Friends see only the simplified route, which is written <strong>once</strong>, when you end the crawl. Mid-session, they see "out since 21:30, 3 drinks" and nothing more.</p>
+        </div>
+      </details>
+
+      <details class="faq__item" id="faq-accuracy">
+        <summary class="faq__q">How accurate is the "you arrived" detection?</summary>
+        <div class="faq__a">
+          <p>The app looks for actual dwell at a known venue, not a single GPS fix. Walk past a bar and nothing happens; sit down and the venue is added to your crawl. Two bars ~15 m apart will prompt you to pick one of three instead of guessing.</p>
+        </div>
+      </details>
+
+      <details class="faq__item" id="faq-bg">
+        <summary class="faq__q">Does it use background location?</summary>
+        <div class="faq__a">
+          <p>Only <strong>while you have a crawl running</strong>, with your permission ("While using the app" plus an Android foreground service). The app does <strong>not</strong> ask for "Allow all the time" and does not track location when there's no active crawl.</p>
+        </div>
+      </details>
+
+      <details class="faq__item" id="faq-offline">
+        <summary class="faq__q">Does it work offline / on a basement bar's Wi-Fi?</summary>
+        <div class="faq__a">
+          <p>Yes. GPS, check-ins, and photos are written to the device first, then uploaded through an outbox when the network returns. A crawl through a basement with no signal works the same as one above ground.</p>
+        </div>
+      </details>
+
+      <details class="faq__item" id="faq-battery">
+        <summary class="faq__q">Battery cost?</summary>
+        <div class="faq__a">
+          <p>Time-based sampling (one fix per second while active) costs about as much as a navigation app on a similar drive. The crawl ends when you tap Stop, so the cost is bounded to the night itself.</p>
+        </div>
+      </details>
+
+      <details class="faq__item" id="faq-delete">
+        <summary class="faq__q">Can I delete my data?</summary>
+        <div class="faq__a">
+          <p>Yes. The in-app account settings delete the account, all check-ins, all friendships, the raw GPS trace, and the simplified route. Deletion is final and runs immediately.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section id="get">
+  <div class="container">
+    <h2 class="section-h">Get in touch</h2>
+    <p class="section-sub">Bug, feature request, or just saying hi — either channel works.</p>
+    <div class="support">
+      <a class="support__card" href="mailto:cheer@saustall.cloud">
+        <div class="support__label">Email</div>
+        <div class="support__title">cheer@saustall.cloud</div>
+        <div class="support__sub">Direct line to the developer</div>
+      </a>
+      <a class="support__card" href="https://github.com/checkelmann/CheersOida/issues">
+        <div class="support__label">GitHub</div>
+        <div class="support__title">Open an issue</div>
+        <div class="support__sub">github.com/checkelmann/CheersOida</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container foot__inner">
+    <div>© 2026 CheersOida</div>
+    <div class="foot__links">
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/checkelmann/CheersOida">CheersOida repo</a>
+      <a href="https://github.com/checkelmann/cheersoida-website">Site repo</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
