@@ -22,12 +22,12 @@ python3 -m http.server 5173
 
 ## Bug reports
 
-Site bugs (broken link, layout glitch, typo, wrong copy) — open an issue
-on this repo:
+App bugs, feature requests, account questions — open an issue on this
+repo's tracker:
 [github.com/checkelmann/cheersoida-website/issues](https://github.com/checkelmann/cheersoida-website/issues).
 
-App bugs, account questions, or anything CheersOida-the-app related —
-email `cheers@cheersoida.app`.
+Site bugs (broken link, layout glitch, typo, wrong copy) — email
+`cheers@cheersoida.app`.
 
 ## Editing
 
