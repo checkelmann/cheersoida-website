@@ -282,6 +282,7 @@ section { padding-top: var(--section-y-mobile); padding-bottom: var(--section-y-
   gap: 14px;
   max-width: 640px;
 }
+@media (min-width: 640px) { .support { grid-template-columns: 1fr 1fr; gap: 20px; } }
 .support__card {
   background: var(--card);
   border: 1px solid var(--card-border);

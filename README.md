@@ -20,6 +20,15 @@ python3 -m http.server 5173
 # then open http://127.0.0.1:5173/
 ```
 
+## Bug reports
+
+Site bugs (broken link, layout glitch, typo, wrong copy) — open an issue
+on this repo:
+[github.com/checkelmann/cheersoida-website/issues](https://github.com/checkelmann/cheersoida-website/issues).
+
+App bugs, account questions, or anything CheersOida-the-app related —
+email `cheers@cheersoida.app`.
+
 ## Editing
 
 `index.html` and `de/index.html` share an identical structure — only the visible copy
