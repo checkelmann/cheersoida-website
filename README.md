@@ -23,13 +23,13 @@
 
 ## What is CheersOida?
 
-CheersOida fuses social drink check-ins with Strava-style bar-crawl tracking. Log a drink, friends see it and send a **Cheers**. Press **Start** before a night out and the app records the route you walk between bars, detects when you arrive, and gives you a summary afterwards — distance, duration, venues visited, and **drinks per hour**.
+CheersOida maps your social outings — from venue to venue — and lets friends cheer you on along the way. Press **Start** before a night out and the app records the route you walk, detects when you arrive at each venue, and gives you a summary afterwards — distance, duration, venues visited, and your check-ins for the evening.
 
 ## Features
 
-- **GPS route** — every bar crawl becomes a replayable polyline.
-- **Dwell detection** — sitting at the bar is the signal; walking past is not.
-- **Friends & Cheers** — your mates see what you're drinking in real time and send a one-tap Cheers.
+- **GPS route** — every night out becomes a replayable polyline.
+- **Dwell detection** — arriving at a venue is the signal; walking past is not.
+- **Friends & Cheers** — your mates see your check-ins in real time and send a one-tap Cheers.
 - **Bilingual DE / EN** — owned and operated from Austria.
 
 ## Screenshots
@@ -67,13 +67,13 @@ CheersOida fuses social drink check-ins with Strava-style bar-crawl tracking. Lo
 
 ## Was ist CheersOida?
 
-CheersOida verbindet soziale Drink-Check-ins mit Bar-Crawl-Tracking im Strava-Stil. Loggst du einen Drink, sehen es deine Freunde und schicken einen **Cheers**. Drück **Start** vor einer Nacht und die App zeichnet die Route zwischen den Bars auf, erkennt die Ankunft in jeder Bar und liefert danach eine Zusammenfassung — Distanz, Dauer, besuchte Bars und **Drinks pro Stunde**.
+CheersOida begleitet deine sozialen Abende — von Location zu Location — und lässt Freunde unterwegs mitmachen. Drück **Start** vor einem Abend und die App zeichnet die Route auf, erkennt die Ankunft an jeder Location und liefert danach eine Zusammenfassung — Distanz, Dauer, besuchte Locations und deine Check-ins des Abends.
 
 ## Funktionen
 
-- **GPS-Route** — jeder Bar Crawl wird zu einer abspielbaren Polylinie.
-- **Dwell-Erkennung** — das Sitzen in der Bar ist das Signal; das Vorbeilaufen zählt nicht.
-- **Friends & Cheers** — deine Freunde sehen live, was du trinkst, und schicken einen Cheers mit einem Tap.
+- **GPS-Route** — jeder Abend wird zu einer abspielbaren Polylinie.
+- **Dwell-Erkennung** — das Ankommen an einer Location ist das Signal; das Vorbeigehen zählt nicht.
+- **Friends & Cheers** — deine Freunde sehen deine Check-ins in Echtzeit und schicken einen Cheers mit einem Tap.
 - **Bilingual DE / EN** — aus Österreich, für Österreich und den DACH-Raum.
 
 ## Support
