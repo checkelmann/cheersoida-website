@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://checkelmann.github.io/cheersoida-website/">
+  <a href="https://cheersoida.app/">
     <img alt="Website" src="https://img.shields.io/badge/Website-cheersoida.app-cf3b20?style=flat-square">
   </a>
   <a href="https://github.com/checkelmann/cheersoida-website/issues/new">
@@ -28,18 +28,24 @@ CheersOida helps you keep track of the places you visit and discover somewhere n
 ## Features
 
 - **GPS route** — keep a map of the paths you walk and the places you visit.
-- **Dwell detection** — arriving at a venue is the signal; walking past is not.
-- **Friends & Cheers** — your mates see your check-ins in real time and send a one-tap Cheers.
+- **Venue stops** — detect time spent near known venues and add a missing place when needed.
+- **Check-in Atlas** — explore your located check-ins by time and place.
+- **Friends & live sharing** — accepted friends can see your latest position during a new session by default; turn sharing off for that session in the live screen.
+- **Cheers & messages** — respond to friends’ check-ins from the feed.
+- **Offline queue** — save activity locally and retry pending uploads when connected.
+- **Data controls** — clear activity history while keeping your account, or request account deletion.
 - **Bilingual DE / EN** — owned and operated from Austria.
 
-## Screenshots
+## Interface previews
+
+Illustrations of the current visual style with example content; these are not device screenshots.
 
 <p align="center">
-  <img src="assets/screenshots/screen-01.png" alt="CheersOida feed" width="240">
+  <img src="assets/screenshots/screen-01.png" alt="Illustrated CheersOida feed with example check-ins" width="240">
   &nbsp;&nbsp;
-  <img src="assets/screenshots/screen-02.png" alt="CheersOida live crawl" width="240">
+  <img src="assets/screenshots/screen-02.png" alt="Illustrated personal Check-in Atlas" width="240">
   &nbsp;&nbsp;
-  <img src="assets/screenshots/screen-03.png" alt="CheersOida check-in" width="240">
+  <img src="assets/screenshots/screen-03.png" alt="Illustrated live route and location-sharing control" width="240">
 </p>
 
 ## Support
@@ -56,7 +62,7 @@ CheersOida helps you keep track of the places you visit and discover somewhere n
 </p>
 
 <p align="center">
-  <a href="https://checkelmann.github.io/cheersoida-website/de/">
+  <a href="https://cheersoida.app/de/">
     <img alt="Webseite" src="https://img.shields.io/badge/Webseite-cheersoida.app-cf3b20?style=flat-square">
   </a>
 </p>
@@ -72,9 +78,25 @@ CheersOida hilft dir, besuchte Orte im Blick zu behalten und neue zu entdecken. 
 ## Funktionen
 
 - **GPS-Route** — behalte deine Wege und besuchten Orte auf einer Karte.
-- **Dwell-Erkennung** — das Ankommen an einer Location ist das Signal; das Vorbeigehen zählt nicht.
-- **Friends & Cheers** — deine Freunde sehen deine Check-ins in Echtzeit und schicken einen Cheers mit einem Tap.
+- **Besuchte Orte** — Verweilen nahe bekannter Locations erkennen und fehlende Orte ergänzen.
+- **Check-in-Atlas** — eigene Check-ins mit Standort nach Zeitraum und Ort erkunden.
+- **Freunde & Live-Freigabe** — neue Sessions teilen den letzten Standort zunächst mit akzeptierten Freunden; im Live-Bildschirm kannst du das für die Session ausschalten.
+- **Prost & Nachrichten** — im Feed auf die Check-ins deiner Freunde reagieren.
+- **Offline-Warteschlange** — Aktivitäten lokal speichern und ausstehende Übertragungen bei Verbindung erneut versuchen.
+- **Datenkontrolle** — Aktivitätsverlauf bei bestehendem Konto oder das ganze Konto löschen.
 - **Bilingual DE / EN** — aus Österreich, für Österreich und den DACH-Raum.
+
+## Vorschauen der Oberfläche
+
+Illustrationen des aktuellen Designs mit Beispieldaten, keine Geräte-Screenshots.
+
+<p align="center">
+  <img src="assets/screenshots/screen-01-de.png" alt="Illustrierter Feed mit Beispiel-Check-ins" width="240">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/screen-02-de.png" alt="Illustrierter persönlicher Check-in-Atlas" width="240">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/screen-03-de.png" alt="Illustrierte Live-Route mit Freigabeschalter" width="240">
+</p>
 
 ## Support
 
@@ -83,4 +105,4 @@ CheersOida hilft dir, besuchte Orte im Blick zu behalten und neue zu entdecken. 
 
 ---
 
-[Privacy policy](https://checkelmann.github.io/cheersoida-website/privacy.html) · [CheersOida app repo](https://github.com/checkelmann/CheersOida) · [cheersoida-website repo](https://github.com/checkelmann/cheersoida-website) · © 2026
+[Privacy policy](https://cheersoida.app/privacy.html) · [CheersOida app repo](https://github.com/checkelmann/CheersOida) · [cheersoida-website repo](https://github.com/checkelmann/cheersoida-website) · © 2026

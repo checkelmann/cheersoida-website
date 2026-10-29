@@ -544,3 +544,10 @@ section { padding-top: var(--section-y-mobile); padding-bottom: var(--section-y-
 @media (min-width: 480px) and (max-width: 767px) {
   .nav__links a.nav__cta { display: inline-flex; }
 }
+
+/* Current-product previews and support guidance. */
+.shot-preview { margin: 0; min-width: 0; }
+.shot-preview .shot { aspect-ratio: 39 / 82; }
+.shot-preview figcaption { font-family: var(--font-mono); font-weight: 700; font-size: 13px; line-height: 1.5; margin-top: 12px; color: var(--muted); }
+.support-note { max-width: 64ch; font-size: 15px; line-height: 1.6; color: var(--muted); margin-top: 20px; }
+.prose { overflow-wrap: anywhere; }

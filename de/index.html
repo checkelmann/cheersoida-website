@@ -9,11 +9,17 @@
 
   <meta property="og:title" content="CheersOida">
   <meta property="og:description" content="Orte entdecken. Routen festhalten.">
-  <meta property="og:image" content="https://checkelmann.github.io/cheersoida-website/assets/og-image.png">
-  <meta property="og:url" content="https://checkelmann.github.io/cheersoida-website/de/">
+  <meta property="og:image" content="https://cheersoida.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://cheersoida.app/de/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="canonical" href="https://cheersoida.app/de/">
+  <link rel="alternate" hreflang="en" href="https://cheersoida.app/">
+  <link rel="alternate" hreflang="de" href="https://cheersoida.app/de/">
+  <link rel="alternate" hreflang="x-default" href="https://cheersoida.app/">
   <link rel="icon" type="image/png" href="../assets/logo-icon.png">
   <link rel="preload" href="../assets/fonts/BricolageGrotesque_600SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="../assets/fonts/Bitter_700Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -46,7 +52,7 @@
     <div class="hero__grid">
       <div>
         <h1>Orte entdecken.<br>Routen festhalten.</h1>
-        <p class="hero__lede">CheersOida zeichnet deine Route und Stopps an Locations auf. Behalte besuchte Orte im Blick, sieh sie auf der Karte und entdecke neue.</p>
+        <p class="hero__lede">Entdecke Orte zu Fuß. CheersOida zeichnet deine Route auf, erkennt Stopps an Locations und sammelt deine Check-ins auf einer Karte. Teile den Ausflug mit Freunden und finde besuchte Orte später im Atlas wieder.</p>
         <div class="hero__ctas">
           <a class="btn btn--primary" href="#preview">App laden</a>
           <a class="btn btn--secondary" href="#ablauf">So läuft's ↓</a>
@@ -91,7 +97,7 @@
 <section id="preview">
   <div class="container">
     <h2 class="section-h">Aktuell in geschlossener Vorschau</h2>
-    <p class="section-sub">CheersOida ist noch nicht im öffentlichen App Store oder Play Store. Schreib eine E-Mail an <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>, um freigeschaltet zu werden. So geht's weiter:</p>
+    <p class="section-sub">Android und iOS sind per Einladung zugänglich. Schreib an <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>, um Zugang und die Installationsschritte für dein Gerät zu erhalten.</p>
     <div class="preview">
       <div class="preview__card">
         <div class="preview__title">iOS — TestFlight</div>
@@ -117,23 +123,23 @@
 
 <section id="ablauf">
   <div class="container">
-    <h2 class="section-h">Von Ort zu Ort</h2>
-    <p class="section-sub">Drei Dinge passieren, der Reihe nach. Das Langweilige macht die App.</p>
+    <h2 class="section-h">Losgehen, ankommen, wiederfinden</h2>
+    <p class="section-sub">Starte eine Route, sammle Stopps und behalte besuchte Orte im Blick.</p>
     <div class="steps">
       <div class="step">
         <div class="step__num">01</div>
         <div class="step__title">Entdeckungstour starten</div>
-        <div class="step__body">Tippe vor dem Losgehen auf <strong>Start</strong>. CheersOida zeichnet deinen Fußweg auf, während du neue Orte erkundest.</div>
+        <div class="step__body">Tippe vor dem Losgehen auf <strong>Start</strong>. Mit Standortfreigabe zeichnet die App deine Route auf. Im Live-Bildschirm findest du den Schalter zur Standortfreigabe: Für jede neue Session ist das Teilen mit akzeptierten Freunden zunächst eingeschaltet.</div>
       </div>
       <div class="step">
         <div class="step__num">02</div>
-        <div class="step__title">Ankommen, erkannt werden</div>
-        <div class="step__body">Wenn du tatsächlich an einem Ort bleibst — nicht nur vorbeiläufst — wird er zu deiner Route hinzugefügt. Kein Tippen nötig.</div>
+        <div class="step__title">Stopps sammeln</div>
+        <div class="step__body">Bleibst du in der Nähe einer bekannten Location, kann CheersOida den Besuch automatisch erfassen. Das hängt von GPS-Genauigkeit und vorhandenen Ortsdaten ab. Fehlende Locations kannst du selbst hinzufügen.</div>
       </div>
       <div class="step">
         <div class="step__num">03</div>
-        <div class="step__title">Einchecken. Freunde prostieren.</div>
-        <div class="step__body">Tippe zum Einchecken. Freunde sehen es in Echtzeit und können ein Prost oder eine Nachricht schicken.</div>
+        <div class="step__title">Den Besuch festhalten</div>
+        <div class="step__body">Ergänze einen Check-in, eine Notiz oder ein Foto. Freunde können ein Prost oder eine Nachricht schicken. Mit <strong>Beenden</strong> speicherst du die Routen-Zusammenfassung; Check-ins mit Standort findest du im Atlas wieder.</div>
       </div>
     </div>
   </div>
@@ -141,38 +147,38 @@
 
 <section id="funktionen">
   <div class="container">
-    <h2 class="section-h">Was drin ist</h2>
-    <p class="section-sub">Die Bausteine, die CheersOida von einer Check-in-App unterscheiden.</p>
+    <h2 class="section-h">Besuchte Orte im Blick</h2>
+    <p class="section-sub">Automatische Stopps, eine persönliche Check-in-Karte und Freunde unterwegs.</p>
     <div class="features">
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <div class="feature__title">Echte Routenaufzeichnung</div>
-        <div class="feature__body">Zeitbasiertes GPS, eine Sekunde pro Fix. Strecke, Verweildauer und Venue-Erkennung fallen direkt daraus ab.</div>
+        <div class="feature__title">Fußwege &amp; Zusammenfassungen</div>
+        <div class="feature__body">Du startest und beendest die Session selbst. Danach siehst du Route, Distanz, Dauer und besuchte Locations.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-        <div class="feature__title">Verweilzeit-Erkennung</div>
-        <div class="feature__body">Stopps werden erkannt, nicht getippt. „In einer Bar angekommen" wird von „daran vorbeigegangen" unterschieden.</div>
+        <div class="feature__title">Locations entdecken &amp; Ankunft erkennen</div>
+        <div class="feature__body">Erkunde Orte mit Daten aus OpenStreetMap. Die Erkennung berücksichtigt das Verweilen an einer Location, nicht nur einen GPS-Punkt beim Vorbeigehen. Fehlende Orte kannst du hinzufügen.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-        <div class="feature__title">Freunde &amp; Prost</div>
-        <div class="feature__body">Ein Feed nur für Freunde, Live-Prost auf jeden Check-in, Push-Benachrichtigungen mit Antwort-Aktion.</div>
+        <div class="feature__title">Freunde, Prost &amp; Live-Standort</div>
+        <div class="feature__body">Füge Freunde per Benutzername, Einladung oder QR-Code hinzu. Sieh ihre Check-ins und den zuletzt geteilten Standort aktiver Sessions, einschließlich Alter und GPS-Genauigkeit.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg></span>
-        <div class="feature__title">Deutsch &amp; Englisch</div>
-        <div class="feature__body">Von Anfang an zweisprachig. Gleiche UI, gleicher Text, gleiche Notification-Aktionen in DE und EN.</div>
+        <div class="feature__title">Dein Check-in-Atlas</div>
+        <div class="feature__body">Sieh deine eigenen Check-ins mit Standort auf einer Karte. Filtere nach Zeitraum, erkunde gruppierte Punkte und öffne die Einträge am Ort. Die Oberfläche gibt es auf Deutsch und Englisch.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg></span>
-        <div class="feature__title">Offline-zuerst</div>
-        <div class="feature__body">GPS, Check-ins und Fotos werden lokal gesammelt und synchronisiert, sobald das WLAN wieder will.</div>
+        <div class="feature__title">Lokal gespeichert, später synchronisiert</div>
+        <div class="feature__body">Standortpunkte und Check-ins werden am Gerät gespeichert. Ausstehende Check-ins und Fotos werden bei Verbindung erneut übertragen. Session-Start und soziale Funktionen brauchen Netz; GPS und Karten hängen weiterhin von Empfang und Cache ab.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-        <div class="feature__title">Privatsphäre by Default</div>
-        <div class="feature__body">Rohe GPS-Daten sieht nur du. Freunde sehen nur die vereinfachte Route, einmalig beim Ende des Abends veröffentlicht.</div>
+        <div class="feature__title">Freigabe steuern &amp; Daten löschen</div>
+        <div class="feature__body">Neue Sessions starten mit eingeschalteter Live-Freigabe; im Live-Bildschirm kannst du sie ausschalten. Lösche deinen Aktivitätsverlauf bei bestehendem Konto oder das ganze Konto. Die Datenschutz-Seite erklärt Freigaben und Bildlinks.</div>
       </div>
     </div>
   </div>
@@ -180,12 +186,12 @@
 
 <section>
   <div class="container">
-    <h2 class="section-h">Blick in die App</h2>
-    <p class="section-sub">Drei Screens aus einer echten Session.</p>
+    <h2 class="section-h">Ein Blick in CheersOida</h2>
+    <p class="section-sub">Illustrierte Vorschauen des aktuellen Designs mit Beispieldaten. Dies sind keine Geräte-Screenshots.</p>
     <div class="shots">
-      <div class="shot"><img src="../assets/screenshots/screen-01.png" alt="CheersOida Live-Session mit Routenkarte" loading="lazy"></div>
-      <div class="shot"><img src="../assets/screenshots/screen-02.png" alt="CheersOida Aktivitäts-Details mit Freunden und Prost" loading="lazy"></div>
-      <div class="shot"><img src="../assets/screenshots/screen-03.png" alt="CheersOida Feed mit Check-in eines Freundes" loading="lazy"></div>
+      <figure class="shot-preview"><div class="shot"><img src="../assets/screenshots/screen-01-de.png" alt="Illustrierter CheersOida-Feed mit Check-in an einer Location und geteilter Live-Session" width="780" height="1640" loading="lazy"></div><figcaption>Check-ins &amp; Freunde</figcaption></figure>
+      <figure class="shot-preview"><div class="shot"><img src="../assets/screenshots/screen-02-de.png" alt="Illustrierter Check-in-Atlas mit gruppierten Besuchen und Zeitraumfilter" width="780" height="1640" loading="lazy"></div><figcaption>Dein Check-in-Atlas</figcaption></figure>
+      <figure class="shot-preview"><div class="shot"><img src="../assets/screenshots/screen-03-de.png" alt="Illustrierte Live-Session mit Route, Freigabeschalter und besuchten Locations" width="780" height="1640" loading="lazy"></div><figcaption>Live-Route &amp; besuchte Orte</figcaption></figure>
     </div>
   </div>
 </section>
@@ -193,64 +199,57 @@
 <section id="faq">
   <div class="container">
     <h2 class="section-h">Fragen</h2>
-    <p class="section-sub">Die ehrlichen, kurzen Antworten.</p>
+    <p class="section-sub">So funktionieren Ortung, Freigaben und der Umgang mit deinen Daten.</p>
     <div class="faq">
-
       <details class="faq__item" id="faq-daten">
-        <summary class="faq__q">Welche Daten sammelt die App?</summary>
-        <div class="faq__a"><p>Ein Konto (E-Mail, Benutzername), einen zeitbasierten GPS-Track <em>während ein Crawl läuft</em>, deine Check-ins, angehängte Fotos, deine Freundesliste und ein Push-Token. Die volle Aufschlüsselung steht auf der <a href="privacy.html">Datenschutz-Seite</a>.</p></div>
+        <summary class="faq__q">Welche Daten nutzt die App?</summary>
+        <div class="faq__a"><p>Ein Konto, Profildaten, Standortpunkte während aktiver Sessions, Check-ins, optionale Fotos und Notizen, Freundschaften und Benachrichtigungs-Token. Die Live-Freigabe nutzt außerdem einen ersetzbaren Standortpunkt mit Zeitstempel und Genauigkeit. Details zu Sichtbarkeit, Bildlinks, Diensten und Löschung stehen auf der <a href="privacy.html">Datenschutz-Seite</a>.</p></div>
       </details>
-
       <details class="faq__item" id="faq-route-de">
-        <summary class="faq__q">Sehen meine Freunde meine Route, während ich noch unterwegs bin?</summary>
-        <div class="faq__a"><p>Nein. Freunde sehen nur die vereinfachte Route, die <strong>einmal</strong> geschrieben wird, wenn du den Abend beendest. Während der Session nur „seit 21:30 unterwegs, 3 Check-ins" und sonst nichts.</p></div>
+        <summary class="faq__q">Was sehen Freunde, während ich unterwegs bin?</summary>
+        <div class="faq__a"><p>Neue Sessions teilen deinen letzten Standort standardmäßig mit akzeptierten Freunden. Du kannst das im Live-Bildschirm für die Session ausschalten; jede neue Session startet wieder mit eingeschalteter Freigabe. Freunde sehen den letzten Punkt, sein Alter und die GPS-Genauigkeit, aber keine Wiedergabe deiner gesamten Live-Route. Nach einer Minute gilt ein Punkt als veraltet, nach fünf Minuten wird er ausgeblendet. Online entfernt Ausschalten oder Beenden den Punkt. Beendest du offline, werden keine neuen Punkte gesendet; der letzte geteilte Punkt verfällt innerhalb von fünf Minuten. Gruppenmitglieder können für Gruppenfunktionen ebenfalls letzte Positionen erhalten. Beendete Routen sind für akzeptierte Freunde verfügbar.</p></div>
       </details>
-
       <details class="faq__item" id="faq-erkennung">
-        <summary class="faq__q">Wie genau ist die „du bist angekommen"-Erkennung?</summary>
-        <div class="faq__a"><p>Die App erkennt echtes Verweilen an einem bekannten Ort, nicht einen einzelnen GPS-Fix. An einem Ort vorbeilaufen passiert nichts; bleiben fügt ihn zum Abend hinzu. Bei zwei Orten im Abstand von ~15 m fragt die App dich, welcher gemeint ist.</p></div>
+        <summary class="faq__q">Wird jeder Besuch automatisch erkannt?</summary>
+        <div class="faq__a"><p>Nicht immer. Die Erkennung nutzt mehrere GPS-Punkte und die Aufenthaltsdauer nahe einer bekannten Location. Schlechter Empfang, eng beieinanderliegende Orte oder fehlende Kartendaten können das Ergebnis beeinflussen. Du kannst fehlende Locations ergänzen; eine Erkennung jedes Stopps ist nicht garantiert.</p></div>
       </details>
-
       <details class="faq__item" id="faq-hintergrund">
-        <summary class="faq__q">Nutzt die App Ortung im Hintergrund?</summary>
-        <div class="faq__a"><p>Nur <strong>solange ein Abend läuft</strong>, mit deiner Erlaubnis („Beim Verwenden der App" plus Android Foreground-Service). Die App fragt <strong>nicht</strong> nach „Immer erlauben" und trackt nicht, wenn keine Session aktiv ist.</p></div>
+        <summary class="faq__q">Läuft die Ortung bei ausgeschaltetem Bildschirm weiter?</summary>
+        <div class="faq__a"><p>Während einer aktiven Session kann die Ortung mit deiner Erlaubnis im Hintergrund weiterlaufen. Android nutzt einen sichtbaren Vordergrunddienst; iOS zeigt die Standortanzeige. Die App fragt nach Standortfreigabe beim Verwenden, nicht nach „Immer“. Mit Beenden stoppst du die Session-Ortung. Beim Eintragen eines Check-ins kann separat dein Standort verwendet werden.</p></div>
       </details>
-
       <details class="faq__item" id="faq-offline">
-        <summary class="faq__q">Funktioniert die App offline / im Keller ohne Empfang?</summary>
-        <div class="faq__a"><p>Ja. GPS, Check-ins und Fotos werden zuerst am Gerät gespeichert und über eine Outbox hochgeladen, sobald das Netz wiederkommt.</p></div>
+        <summary class="faq__q">Was funktioniert ohne Internet?</summary>
+        <div class="faq__a"><p>Nach dem Session-Start werden Standortpunkte lokal gespeichert. Check-ins und Fotos können in der Warteschlange bleiben und bei erneuter Verbindung übertragen werden. Neue Sessions, Live-Freigabe, Freundesaktionen, neue Kartenkacheln und Ortsdaten brauchen Netz. GPS-Empfang kann in Gebäuden oder unterirdisch trotzdem schlecht sein.</p></div>
       </details>
-
       <details class="faq__item" id="faq-akku">
-        <summary class="faq__q">Akkuverbrauch?</summary>
-        <div class="faq__a"><p>Zeitbasiertes Sampling (eine Sekunde pro Fix, solange aktiv) kostet etwa so viel wie eine Navi-App auf vergleichbarer Strecke. Der Abend endet mit „Beenden", also beschränkt sich der Verbrauch auf die Nacht.</p></div>
+        <summary class="faq__q">Wie viel Akku braucht die Ortung?</summary>
+        <div class="faq__a"><p>Eine aktive Route nutzt GPS, Hintergrundverarbeitung und teilweise das Netz. Der Verbrauch hängt von Gerät, Empfang und Dauer ab; es gibt keinen festen Verbrauchswert. Beende die Session, wenn du fertig bist.</p></div>
       </details>
-
       <details class="faq__item" id="faq-loeschen">
-        <summary class="faq__q">Kann ich meine Daten löschen?</summary>
-        <div class="faq__a"><p>Ja. In den Konto-Einstellungen löschst du Konto, Check-ins, Freundschaften, den rohen GPS-Track und die vereinfachten Routen vergangener Abende. Endgültig und sofort.</p></div>
+        <summary class="faq__q">Kann ich den Verlauf löschen und mein Konto behalten?</summary>
+        <div class="faq__a"><p>Ja. <strong>Profil → Einstellungen → Alle meine Daten löschen</strong> entfernt Aktivitätsverlauf, Standortpunkte, Check-in-Fotos sowie Prost und Nachrichten an deinen Inhalten. Konto, Profil, Freunde und Benachrichtigungen bleiben bestehen. <strong>Konto löschen</strong> entfernt zusätzlich Konto und Profil. Die Bereinigung braucht eine Verbindung und gegebenenfalls einen erneuten Versuch. Erst die Bestätigung in der App meldet den Abschluss. Wenn du keinen Zugriff mehr hast, schreib an <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p></div>
       </details>
-
     </div>
   </div>
 </section>
 
 <section id="holen">
   <div class="container">
-<h2 class="section-h">Kontakt</h2>
-    <p class="section-sub">App-Bug oder Wunsch? Einer der beiden Wege funktioniert.</p>
+    <h2 class="section-h">Kontakt</h2>
+    <p class="section-sub">Melde ein App-Problem, frag nach Zugang oder hol dir Hilfe zu deinem Konto.</p>
     <div class="support">
       <a class="support__card" href="mailto:cheers@cheersoida.app">
         <div class="support__label">E-Mail</div>
         <div class="support__title">cheers@cheersoida.app</div>
-        <div class="support__sub">Direkt zur Entwicklerin</div>
+        <div class="support__sub">Konto, Zugang &amp; Datenanfragen</div>
       </a>
       <a class="support__card" href="https://github.com/checkelmann/cheersoida-website/issues">
         <div class="support__label">GitHub</div>
         <div class="support__title">Bug melden</div>
-        <div class="support__sub">App-Bugs und Feedback</div>
+        <div class="support__sub">Fehler &amp; Funktionswünsche</div>
       </a>
     </div>
+    <p class="support-note">Schicke Kontodaten oder Diagnoseprotokolle mit persönlichen Informationen per E-Mail statt in einem öffentlichen GitHub-Issue.</p>
   </div>
 </section>
 </main>

@@ -6,6 +6,10 @@
   <title>Privacy — CheersOida</title>
   <meta name="description" content="What CheersOida collects, stores, shows to others, and how to delete it all.">
   <meta name="theme-color" content="#14100c">
+  <link rel="canonical" href="https://cheersoida.app/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://cheersoida.app/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://cheersoida.app/de/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://cheersoida.app/privacy.html">
   <link rel="icon" type="image/png" href="assets/logo-icon.png">
   <link rel="preload" href="assets/fonts/BricolageGrotesque_600SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/fonts/Bitter_700Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -29,55 +33,57 @@
   <section>
     <div class="container prose">
       <h1>Privacy</h1>
-      <p class="updated">Last updated: 2026-09-28</p>
+      <p class="updated">Last updated: 2026-10-29</p>
+      <p>This page describes the current CheersOida app and this website. CheersOida records venue visits and walking routes, supports check-ins, and lets accepted friends follow shared activity. Questions or data requests: <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p>
 
-      <p>CheersOida is a small, single-developer app. This page says exactly what the app does with your data — no boilerplate, no "we may share with partners" language, because there are no partners.</p>
-
-      <h2>What we collect</h2>
-
-      <h3>Account</h3>
-      <p>Email address and a username you pick at sign-up. Email is used for password recovery and the optional TestFlight/invite handoff. The username is what your friends see.</p>
-
-      <h3>GPS trace</h3>
-      <p>While a crawl session is active and only with your permission ("While using the app" on iOS, plus an Android foreground service), the app samples your location approximately once per second. The raw trace is stored only on your device until you end the crawl, then uploaded to the server.</p>
-      <p>Your friends <strong>never</strong> see the raw GPS trace. When a crawl ends, the server keeps a single simplified route (one point per ~50 m) associated with the finished session. Mid-session, the simplified route doesn't exist yet — friends see "out since 21:30, 3 drinks" and nothing more.</p>
-
-      <h3>Check-ins</h3>
-      <p>Each check-in stores the drink you logged, an optional venue ("where"), an optional photo, an optional note, and the timestamp. Photos are stored privately with row-level security — only you and your accepted friends can see them.</p>
-
-      <h3>Friends</h3>
-      <p>A list of usernames you've friended. The list is private to you.</p>
-
-      <h3>Push notifications</h3>
-      <p>An Expo push token, only if you grant notification permission. The token is used to send cheers, friend-request, and reply notifications. Revoke notifications in your phone's settings; the token is dropped from the server the next time you open the app.</p>
+      <h2>What we collect and why</h2>
+      <h3>Account and profile</h3>
+      <p>Your email and sign-in credentials are used for authentication and password recovery. Your username, optional display name, profile photo, and language preference support your profile and friend connections. Other signed-in users can find basic profile details through username search. Your account email is not displayed to other users.</p>
+      <h3>Routes, venue stops, and live position</h3>
+      <p>When you start a session with location permission, the app records timestamped coordinates and GPS accuracy on your phone. Updates can continue with the screen off while the session is active. Android requests timed updates about every 15 seconds; actual timing depends on the operating system and reception. Tap Stop to end session tracking.</p>
+      <p>Route points are stored locally and uploaded for session finalisation. A latest point can also be sent during active group features. The app uses known venue data to detect stops and records visits, arrival/departure times, and a simplified route. There is no fixed promise of one point per second or a specific route-point spacing.</p>
+      <p><strong>New sessions share your latest position with accepted friends by default.</strong> A sharing switch in the live screen turns this off for that session; it starts on again for the next new session. The shared record contains one replaceable point, its GPS timestamp, and accuracy—not a playback of the whole live route. It is marked stale after one minute and hidden from friends after five minutes without an update.</p>
+      <p>Switching sharing off or finishing removes the shared point when the server is reachable. If you stop offline, no new live positions are sent and the last point expires from friend access within five minutes. Expiry is an access limit, not a promise of immediate physical deletion. Active group members can also receive latest positions for group features; the friend-sharing switch controls the separate friend snapshot.</p>
+      <h3>Check-ins and social activity</h3>
+      <p>Check-ins can include drink details, a timestamp, an optional location or venue, a town label, a note, and a photo. The app also stores favorites, custom catalog entries, friend connections and requests, group participation, Cheers, messages, and notifications. These provide the activity feed, personal Atlas, and social features. Check-in location is separate from the live-sharing switch.</p>
+      <h3>Photos and image links</h3>
+      <p><strong>Uploaded check-in photos and profile images currently use public image URLs.</strong> Anyone who has an image link can view it, even without an accepted friendship. Friend access checks on activity records do not make the underlying image URL private. Removing a photo through the cleanup flow removes its stored image, but cannot recall copies saved elsewhere.</p>
+      <h3>Notifications and diagnostics</h3>
+      <p>If you allow notifications, an Expo push token is stored to deliver activity, friend-request, Cheers, and reply alerts. Notification content may include part of an activity or message. You can turn alerts off in your device settings; an existing delivery token may remain registered after alerts are disabled.</p>
+      <p>The app keeps a bounded local diagnostic history for notification, location, sync, and map troubleshooting. It may contain account or activity identifiers, timestamps, errors, and location details. Diagnostic exports you choose to share with support can therefore contain personal information. No advertising or third-party behavioral analytics SDK is added by CheersOida.</p>
 
       <h2>Who can see what</h2>
       <ul>
-        <li><strong>Raw GPS trace:</strong> only you.</li>
-        <li><strong>Simplified route of a finished crawl:</strong> your accepted friends.</li>
-        <li><strong>Check-ins:</strong> your accepted friends.</li>
-        <li><strong>Profile (username + stats):</strong> your accepted friends.</li>
-        <li><strong>Account email:</strong> only CheersOida (not displayed anywhere in the app).</li>
+        <li><strong>Full raw track:</strong> restricted to its owner through the app's data access rules. Latest points used for group features and friend sharing are separate disclosures described above.</li>
+        <li><strong>Latest shared position:</strong> you and accepted friends while the session is active, sharing is enabled, and the point is recent enough. Group features can share latest positions with active group participants.</li>
+        <li><strong>Finished route and activity:</strong> accepted friends can access shared finished-session details; active-session and group content follow their session/group permissions.</li>
+        <li><strong>Check-ins, notes, Cheers, and messages:</strong> shown to the owner and authorized friends/group participants according to the activity's permissions. An included location can reveal where a visit happened.</li>
+        <li><strong>Basic profile:</strong> discoverable by other signed-in users; image URLs are public to anyone with the link.</li>
+        <li><strong>Email and private account settings:</strong> not displayed in the social feed or username search.</li>
       </ul>
 
-      <h2>Where the data is stored</h2>
-      <p>Hosted on Supabase in the <code>eu-west-2</code> region (London, United Kingdom). Photos are stored in a Supabase Storage bucket named <code>photos</code> with row-level security tied to your account id. Backups are configured by Supabase and stay in the same region. The United Kingdom is not part of the EU/EEA — Supabase is covered by the EU–UK adequacy decision, so no additional transfer safeguard is required for access from the EU/EEA.</p>
+      <h2>Storage and service providers</h2>
+      <p>The app uses Supabase for accounts, database records, and uploaded images. The project is hosted in <code>eu-west-2</code> (London, United Kingdom). Device caches, local route data, queued changes, and diagnostics are stored on your phone. Service logs and backups are managed by the relevant provider; this page does not promise a fixed log-retention period or immediate erasure of backups.</p>
+      <p>Expo provides push delivery and app-update infrastructure; mobile notification delivery also involves Apple or Google. OpenFreeMap serves map tiles, so tile requests expose the requested map area and network information such as your IP address to that service. Venue lookup uses OpenStreetMap data through a server-side Overpass query. Town labels use your device's location/geocoding service. Opening an external directions link sends you to the mapping service you choose.</p>
+      <p>Provider information: <a href="https://supabase.com/privacy">Supabase privacy</a>, <a href="https://expo.dev/privacy">Expo privacy</a>, and <a href="https://openfreemap.org/privacy/">OpenFreeMap privacy</a>.</p>
 
-      <h2>Analytics</h2>
-      <p>There is no analytics SDK. No Google Analytics, no Plausible, no Sentry, no Facebook pixel. The only server logs are Supabase's own request logs (auth, RPC, storage), retained for ~7 days.</p>
+      <h2>Clearing activity or deleting an account</h2>
+      <p><strong>Profile → Settings → Delete all my data</strong> clears sessions, check-ins, route history, check-in photos, and the Cheers/messages attached to your content. Your account, profile and avatar, friends, notifications, saved favorites, and custom catalog entries remain.</p>
+      <p><strong>Delete account</strong> also removes your account, profile, friendships, and owned uploaded images. Both operations need a connection. Cleanup is retryable and can remain pending if a network or storage request fails; it is complete only when the app confirms completion. Shared live-location access is revoked as cleanup begins on the server. Deleted activity is not recreated from an older pending queue.</p>
+      <p>If you cannot sign in, contact <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a> from the email used for your account. We may need to verify ownership before acting. You can also use that address for requests about access, correction, or deletion of your personal information.</p>
 
-      <h2>Deleting your data</h2>
-      <p>In the app: <em>Profile → Settings → Delete account.</em> This removes your account, all check-ins, all photos, all friendships, your raw GPS trace, and the simplified routes of your past crawls. Deletion is final and runs immediately.</p>
-      <p>If you can't open the app, email <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a> from the address on your account and ask for a manual delete. It will be done within seven days, usually same-day.</p>
+      <h2>Age requirement</h2>
+      <p>The current app asks you to confirm during setup that you meet the legal drinking age in your country. It does not ask for a date of birth. The service is not intended for children; contact support if you believe a child has created an account.</p>
 
-      <h2>Children</h2>
-      <p>The app is not directed at children under 16. If you believe a child has created an account, contact the address below and it will be deleted.</p>
+      <h2>This website and support</h2>
+      <p>This static website is hosted on GitHub Pages. It has no account system, advertising pixels, analytics script, tracking cookies, or third-party font requests. GitHub receives technical requests needed to serve the site; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>. External links are handled by their destination services.</p>
+      <p>Emailing support shares the message and return address with the developer. GitHub issues are public, so use email for account details, location information, or diagnostic logs.</p>
 
-      <h2>Changes to this policy</h2>
-      <p>If anything here changes in a way that affects what is collected or who can see it, the app's next launch will surface the updated policy and require acknowledgement before you can use the affected feature.</p>
+      <h2>Changes to this page</h2>
+      <p>Updates are published on this page with a new date. Please check this page for the current explanation of how your data is used.</p>
 
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p>
+      <p>CheersOida support: <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p>
 
     </div>
   </section>

@@ -6,6 +6,10 @@
   <title>Datenschutz — CheersOida</title>
   <meta name="description" content="Was CheersOida sammelt, speichert, anderen zeigt — und wie du alles löschen kannst.">
   <meta name="theme-color" content="#14100c">
+  <link rel="canonical" href="https://cheersoida.app/de/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://cheersoida.app/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://cheersoida.app/de/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://cheersoida.app/privacy.html">
   <link rel="icon" type="image/png" href="../assets/logo-icon.png">
   <link rel="preload" href="../assets/fonts/BricolageGrotesque_600SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="../assets/fonts/Bitter_700Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -15,7 +19,7 @@
 
 <nav class="nav">
   <div class="container nav__inner">
-    <a class="nav__brand" href="../">CheersOida</a>
+    <a class="nav__brand" href="./">CheersOida</a>
     <div class="nav__links">
       <a href="./#funktionen">Funktionen</a>
       <a href="./#faq">FAQ</a>
@@ -29,55 +33,57 @@
   <section>
     <div class="container prose">
       <h1>Datenschutz</h1>
-      <p class="updated">Zuletzt aktualisiert: 28.09.2026</p>
+      <p class="updated">Zuletzt aktualisiert: 29.10.2026</p>
+      <p>Diese Seite beschreibt die aktuelle CheersOida-App und diese Website. CheersOida erfasst besuchte Locations und Fußwege, unterstützt Check-ins und lässt akzeptierte Freunde geteilte Aktivitäten verfolgen. Fragen und Datenanfragen: <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p>
 
-      <p>CheersOida ist eine kleine App von einer einzelnen Entwicklerin. Diese Seite sagt genau, was die App mit deinen Daten macht — kein Boilerplate, keine „Wir teilen mit Partnern"-Sprache, weil es keine Partner gibt.</p>
+      <h2>Welche Daten wir wofür nutzen</h2>
+      <h3>Konto und Profil</h3>
+      <p>E-Mail und Zugangsdaten dienen der Anmeldung und Passwort-Wiederherstellung. Benutzername, optionaler Anzeigename, Profilfoto und Spracheinstellung unterstützen dein Profil und Freundschaften. Andere angemeldete Nutzer können grundlegende Profildaten über die Benutzernamensuche finden. Deine Konto-E-Mail wird anderen Nutzern nicht angezeigt.</p>
+      <h3>Routen, besuchte Orte und Live-Standort</h3>
+      <p>Startest du eine Session mit Standortfreigabe, erfasst die App Koordinaten, Zeitstempel und GPS-Genauigkeit auf deinem Gerät. Während der aktiven Session kann das bei ausgeschaltetem Bildschirm weiterlaufen. Unter Android werden zeitbasierte Updates ungefähr alle 15 Sekunden angefragt; der tatsächliche Takt hängt von Betriebssystem und Empfang ab. Mit Beenden stoppst du die Session-Ortung.</p>
+      <p>Standortpunkte werden lokal gespeichert und zum Abschluss der Session hochgeladen. Für aktive Gruppenfunktionen kann auch währenddessen ein letzter Punkt übertragen werden. Die App nutzt bekannte Ortsdaten zur Erkennung von Stopps und speichert Besuche, Ankunfts-/Abgangszeiten und eine vereinfachte Route. Ein Punkt pro Sekunde oder ein bestimmter Abstand zwischen Routenpunkten wird nicht zugesichert.</p>
+      <p><strong>Neue Sessions teilen deinen letzten Standort standardmäßig mit akzeptierten Freunden.</strong> Im Live-Bildschirm kannst du das für die Session ausschalten; bei der nächsten neuen Session ist es wieder eingeschaltet. Geteilt wird ein ersetzbarer Punkt mit GPS-Zeitstempel und Genauigkeit, keine Wiedergabe der gesamten Live-Route. Nach einer Minute ohne Update wird er als veraltet markiert; nach fünf Minuten wird er für Freunde ausgeblendet.</p>
+      <p>Ausschalten oder Beenden entfernt den geteilten Punkt, wenn der Server erreichbar ist. Beendest du offline, werden keine neuen Live-Punkte gesendet; der letzte Punkt verfällt für den Zugriff durch Freunde innerhalb von fünf Minuten. Dieser Ablauf begrenzt den Zugriff und verspricht keine sofortige physische Löschung. Aktive Gruppenmitglieder können für Gruppenfunktionen ebenfalls letzte Positionen erhalten; der Schalter für Freunde steuert den getrennten Freundes-Standortpunkt.</p>
+      <h3>Check-ins und soziale Aktivitäten</h3>
+      <p>Check-ins können Getränkedetails, einen Zeitstempel, optional einen Standort oder Ort, einen Ortsnamen, eine Notiz und ein Foto enthalten. Gespeichert werden außerdem Favoriten, eigene Katalogeinträge, Freundschaften und Anfragen, Gruppenteilnahmen, Prost, Nachrichten und Benachrichtigungen. Sie ermöglichen Feed, persönlichen Atlas und soziale Funktionen. Der Check-in-Standort ist unabhängig vom Live-Freigabeschalter.</p>
+      <h3>Fotos und Bildlinks</h3>
+      <p><strong>Hochgeladene Check-in- und Profilbilder verwenden derzeit öffentliche Bild-URLs.</strong> Wer einen Bildlink kennt, kann das Bild auch ohne akzeptierte Freundschaft ansehen. Zugriffsregeln für Aktivitäten machen die zugrunde liegende Bild-URL nicht privat. Die Bereinigung entfernt das gespeicherte Foto, kann aber keine bereits anderswo gespeicherten Kopien zurückholen.</p>
+      <h3>Benachrichtigungen und Diagnose</h3>
+      <p>Bei erlaubten Benachrichtigungen wird ein Expo-Push-Token gespeichert, um Aktivitäten, Freundschaftsanfragen, Prost und Antworten zuzustellen. Benachrichtigungen können Teile einer Aktivität oder Nachricht enthalten. Du kannst die Anzeige in den Geräte-Einstellungen ausschalten; ein bestehendes Zustell-Token kann danach noch registriert bleiben.</p>
+      <p>Die App speichert einen begrenzten lokalen Diagnoseverlauf für Probleme mit Benachrichtigungen, Ortung, Synchronisierung und Karten. Darin können Konto- und Aktivitätskennungen, Zeitstempel, Fehler und Standortangaben vorkommen. Diagnoseexporte, die du dem Support schickst, können daher personenbezogene Daten enthalten. CheersOida bindet kein Werbe- oder Drittanbieter-SDK zur Verhaltensanalyse ein.</p>
 
-      <h2>Was wir erheben</h2>
-
-      <h3>Konto</h3>
-      <p>E-Mail-Adresse und ein Benutzername, den du bei der Anmeldung wählst. Die E-Mail dient der Passwort-Wiederherstellung und der optionalen TestFlight-/Einladungs-Übergabe. Der Benutzername ist das, was deine Freunde sehen.</p>
-
-      <h3>GPS-Track</h3>
-      <p>Solange eine Crawl-Session aktiv ist und nur mit deiner Erlaubnis („Beim Verwenden der App" auf iOS, plus Android Foreground-Service) sampelt die App etwa einmal pro Sekunde deinen Standort. Der Roh-Track wird nur auf dem Gerät gespeichert, bis du den Crawl beendest, und dann zum Server hochgeladen.</p>
-      <p>Deine Freunde sehen den Roh-Track <strong>niemals</strong>. Wenn ein Crawl endet, behält der Server eine einzelne vereinfachte Route (ein Punkt pro ~50 m), die zur beendeten Session gehört. Während der Session existiert die vereinfachte Route noch nicht — Freunde sehen „seit 21:30 unterwegs, 3 Drinks" und sonst nichts.</p>
-
-      <h3>Check-ins</h3>
-      <p>Jeder Check-in speichert das eingetragene Getränk, einen optionalen Ort („wo"), ein optionales Foto, eine optionale Notiz und den Zeitstempel. Fotos werden privat mit Row-Level-Security gespeichert — nur du und deine akzeptierten Freunde sehen sie.</p>
-
-      <h3>Freunde</h3>
-      <p>Eine Liste der Benutzernamen, mit denen du befreundet bist. Die Liste ist privat für dich.</p>
-
-      <h3>Push-Benachrichtigungen</h3>
-      <p>Ein Expo-Push-Token, nur wenn du die Benachrichtigungs-Erlaubnis erteilst. Das Token dient zum Senden von Prost-, Freundschafts- und Antwort-Benachrichtigungen. Du kannst Benachrichtigungen in den Einstellungen deines Telefons widerrufen; das Token wird beim nächsten Öffnen der App vom Server entfernt.</p>
-
-      <h2>Wer was sieht</h2>
+      <h2>Wer was sehen kann</h2>
       <ul>
-        <li><strong>Roh-GPS-Track:</strong> nur du.</li>
-        <li><strong>Vereinfachte Route eines beendeten Crawls:</strong> deine akzeptierten Freunde.</li>
-        <li><strong>Check-ins:</strong> deine akzeptierten Freunde.</li>
-        <li><strong>Profil (Benutzername + Stats):</strong> deine akzeptierten Freunde.</li>
-        <li><strong>Konto-E-Mail:</strong> nur CheersOida (nirgends in der App sichtbar).</li>
+        <li><strong>Vollständiger Roh-Track:</strong> über die Datenzugriffsregeln der App auf den Eigentümer begrenzt. Letzte Punkte für Gruppenfunktionen und Freunde sind die oben beschriebenen getrennten Freigaben.</li>
+        <li><strong>Letzter geteilter Standort:</strong> du und akzeptierte Freunde, solange die Session aktiv, die Freigabe eingeschaltet und der Punkt aktuell genug ist. Gruppenfunktionen können letzte Positionen mit aktiven Gruppenmitgliedern teilen.</li>
+        <li><strong>Beendete Route und Aktivität:</strong> akzeptierte Freunde können geteilte Details beendeter Sessions sehen. Aktive Session- und Gruppeninhalte folgen ihren Session-/Gruppenberechtigungen.</li>
+        <li><strong>Check-ins, Notizen, Prost und Nachrichten:</strong> sichtbar für Eigentümer und berechtigte Freunde/Gruppenmitglieder entsprechend den Regeln der Aktivität. Ein enthaltener Standort kann den Besuchsort offenlegen.</li>
+        <li><strong>Grundlegendes Profil:</strong> für andere angemeldete Nutzer auffindbar; Bild-URLs sind für jeden mit dem Link öffentlich.</li>
+        <li><strong>E-Mail und private Kontoeinstellungen:</strong> nicht im sozialen Feed oder in der Benutzernamensuche sichtbar.</li>
       </ul>
 
-      <h2>Wo die Daten liegen</h2>
-      <p>Gehostet bei Supabase in der Region <code>eu-west-2</code> (London, Vereinigtes Königreich). Fotos liegen in einem Supabase-Storage-Bucket namens <code>photos</code> mit an deine Account-ID gebundener Row-Level-Security. Backups verwaltet Supabase und bleiben in derselben Region. Das Vereinigte Königreich ist nicht Teil der EU/des EWR — für Supabase gilt der EU-UK-Adäquenzbeschluss, sodass für den Zugriff aus der EU/dem EWR keine zusätzliche Übermittlungsgarantie nötig ist.</p>
+      <h2>Speicherung und Dienstleister</h2>
+      <p>Die App nutzt Supabase für Konten, Datenbankeinträge und hochgeladene Bilder. Das Projekt wird in <code>eu-west-2</code> (London, Vereinigtes Königreich) gehostet. Cache, lokale Routen, ausstehende Änderungen und Diagnoseverlauf liegen auf deinem Gerät. Dienstprotokolle und Backups verwalten die jeweiligen Anbieter; diese Seite verspricht keine feste Log-Aufbewahrung oder sofortige Löschung von Backups.</p>
+      <p>Expo stellt Push-Zustellung und App-Updates bereit; bei mobilen Benachrichtigungen sind außerdem Apple oder Google beteiligt. OpenFreeMap liefert Kartenkacheln und erhält dabei angefragte Kartenausschnitte und technische Netzwerkdaten wie die IP-Adresse. Ortsdaten kommen aus OpenStreetMap über eine serverseitige Overpass-Abfrage. Ortsnamen werden über den Standort-/Geokodierungsdienst des Geräts ermittelt. Externe Routenlinks öffnen den von dir gewählten Kartendienst.</p>
+      <p>Informationen der Anbieter: <a href="https://supabase.com/privacy">Supabase-Datenschutz</a>, <a href="https://expo.dev/privacy">Expo-Datenschutz</a> und <a href="https://openfreemap.org/privacy/">OpenFreeMap-Datenschutz</a>.</p>
 
-      <h2>Analyse</h2>
-      <p>Es gibt kein Analyse-SDK. Kein Google Analytics, kein Plausible, kein Sentry, kein Facebook-Pixel. Die einzigen Server-Logs sind Supabase-eigene Request-Logs (Auth, RPC, Storage), aufbewahrt für ~7 Tage.</p>
+      <h2>Verlauf oder Konto löschen</h2>
+      <p><strong>Profil → Einstellungen → Alle meine Daten löschen</strong> entfernt Sessions, Check-ins, Routenverlauf, Check-in-Fotos sowie Prost/Nachrichten an deinen Inhalten. Konto, Profil und Avatar, Freunde, Benachrichtigungen, Favoriten und eigene Katalogeinträge bleiben erhalten.</p>
+      <p><strong>Konto löschen</strong> entfernt zusätzlich Konto, Profil, Freundschaften und eigene hochgeladene Bilder. Beide Vorgänge brauchen eine Verbindung. Die Bereinigung kann bei Netz- oder Speicherfehlern ausstehen und muss gegebenenfalls erneut versucht werden. Erst die Bestätigung in der App meldet den Abschluss. Beim Beginn der serverseitigen Bereinigung wird der Live-Standortzugriff widerrufen. Gelöschte Aktivitäten werden nicht aus alten ausstehenden Einträgen neu angelegt.</p>
+      <p>Wenn du dich nicht anmelden kannst, schreib von deiner Konto-E-Mail an <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>. Vor der Bearbeitung kann ein Nachweis der Kontoinhaberschaft nötig sein. An dieselbe Adresse kannst du Fragen zu Auskunft, Berichtigung oder Löschung deiner personenbezogenen Daten richten.</p>
 
-      <h2>Daten löschen</h2>
-      <p>In der App: <em>Profil → Einstellungen → Konto löschen.</em> Das entfernt dein Konto, alle Check-ins, alle Fotos, alle Freundschaften, den Roh-GPS-Track und die vereinfachten Routen vergangener Crawls. Endgültig und sofort.</p>
-      <p>Wenn du die App nicht öffnen kannst, schreibe von der Konto-E-Mail an <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a> und bitte um manuelle Löschung. Passiert innerhalb von sieben Tagen, meistens am selben Tag.</p>
+      <h2>Altersvoraussetzung</h2>
+      <p>Die aktuelle App verlangt bei der Einrichtung die Bestätigung, dass du das gesetzliche Mindestalter für Alkoholkonsum in deinem Land erreicht hast. Ein Geburtsdatum wird nicht abgefragt. Der Dienst richtet sich nicht an Kinder. Kontaktiere den Support, wenn du vermutest, dass ein Kind ein Konto angelegt hat.</p>
 
-      <h2>Kinder</h2>
-      <p>Die App richtet sich nicht an Kinder unter 16. Wenn du glaubst, dass ein Kind ein Konto angelegt hat, kontaktiere die untenstehende Adresse und es wird gelöscht.</p>
+      <h2>Diese Website und Support</h2>
+      <p>Diese statische Website wird über GitHub Pages bereitgestellt. Sie enthält kein Kontosystem, keine Werbepixel, kein Analyse-Skript, keine Tracking-Cookies und keine Drittanbieter-Fontabfragen. GitHub erhält technische Anfragen zur Auslieferung der Seite; siehe die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>. Externe Links unterliegen den Diensten am Ziel.</p>
+      <p>Schreibst du dem Support eine E-Mail, erhält der Entwickler Nachricht und Absenderadresse. GitHub-Issues sind öffentlich. Nutze E-Mail für Kontodaten, Standortinformationen oder Diagnoseprotokolle.</p>
 
-      <h2>Änderungen an dieser Erklärung</h2>
-      <p>Wenn sich hier etwas ändert, das beeinflusst, was erhoben oder wer es sehen darf, zeigt der nächste App-Start die aktualisierte Erklärung und verlangt eine Bestätigung, bevor du die betroffene Funktion nutzen kannst.</p>
+      <h2>Änderungen dieser Seite</h2>
+      <p>Aktualisierungen werden auf dieser Seite mit einem neuen Datum veröffentlicht. Bitte prüfe diese Seite, um dich über die aktuelle Verwendung deiner Daten zu informieren.</p>
 
       <h2>Kontakt</h2>
-      <p>E-Mail: <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p>
+      <p>CheersOida-Support: <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a>.</p>
 
     </div>
   </section>
@@ -87,7 +93,7 @@
   <div class="container foot__inner">
     <div>© 2026 CheersOida</div>
     <div class="foot__links">
-      <a href="../">Startseite</a>
+      <a href="./">Startseite</a>
     </div>
   </div>
 </footer>

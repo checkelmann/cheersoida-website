@@ -9,11 +9,17 @@
 
   <meta property="og:title" content="CheersOida">
   <meta property="og:description" content="Discover places. Track your route.">
-  <meta property="og:image" content="https://checkelmann.github.io/cheersoida-website/assets/og-image.png">
-  <meta property="og:url" content="https://checkelmann.github.io/cheersoida-website/">
+  <meta property="og:image" content="https://cheersoida.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://cheersoida.app/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="canonical" href="https://cheersoida.app/">
+  <link rel="alternate" hreflang="en" href="https://cheersoida.app/">
+  <link rel="alternate" hreflang="de" href="https://cheersoida.app/de/">
+  <link rel="alternate" hreflang="x-default" href="https://cheersoida.app/">
   <link rel="icon" type="image/png" href="assets/logo-icon.png">
   <link rel="preload" href="assets/fonts/BricolageGrotesque_600SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/fonts/Bitter_700Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -46,7 +52,7 @@
     <div class="hero__grid">
       <div>
         <h1>Discover places.<br>Track your route.</h1>
-        <p class="hero__lede">CheersOida records your route and venue stops. Keep track of the places you visit, see them on a map, and discover somewhere new.</p>
+        <p class="hero__lede">Discover places as you walk. CheersOida records your route, recognises venue stops, and keeps your check-ins together on a map. Share the outing with friends, then revisit it in your Atlas.</p>
         <div class="hero__ctas">
           <a class="btn btn--primary" href="#preview">Get the app</a>
           <a class="btn btn--secondary" href="#how">How it works ↓</a>
@@ -99,7 +105,7 @@
 <section id="preview">
   <div class="container">
     <h2 class="section-h">Currently in closed preview</h2>
-    <p class="section-sub">CheersOida isn't on the public App Store or Play Store yet. Email <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a> to be added. Here's what to expect once you're in.</p>
+    <p class="section-sub">Android and iOS access is by invitation. Email <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a> to join and receive the installation steps for your device.</p>
     <div class="preview">
       <div class="preview__card">
         <div class="preview__title">iOS — TestFlight</div>
@@ -125,23 +131,23 @@
 
 <section id="how">
   <div class="container">
-    <h2 class="section-h">From place to place</h2>
-    <p class="section-sub">Three things happen, in order. The app handles the boring parts.</p>
+    <h2 class="section-h">Explore, stop, remember</h2>
+    <p class="section-sub">Start a route, let the stops accumulate, and keep a record of the places you visit.</p>
     <div class="steps">
       <div class="step">
         <div class="step__num">01</div>
         <div class="step__title">Start exploring</div>
-        <div class="step__body">Tap <strong>Start</strong> before you head out. CheersOida records your walking route as you explore.</div>
+        <div class="step__body">Tap <strong>Start</strong> before you set off. The app records your route with location permission and shows your live-location sharing switch. Sharing with accepted friends starts on for each new session.</div>
       </div>
       <div class="step">
         <div class="step__num">02</div>
-        <div class="step__title">Arrive, get detected</div>
-        <div class="step__body">When you actually stop at a venue — not just pass one — the app adds it to your route. No taps required.</div>
+        <div class="step__title">Let the stops add up</div>
+        <div class="step__body">Stay near a known venue and CheersOida can record the visit automatically. Detection depends on GPS accuracy and available venue data; you can also add a missing venue.</div>
       </div>
       <div class="step">
         <div class="step__num">03</div>
-        <div class="step__title">Check in. Friends cheer.</div>
-        <div class="step__body">Tap to check in. Friends see it in real time and can send a Cheers or a message.</div>
+        <div class="step__title">Keep the visit</div>
+        <div class="step__body">Add a check-in, a note, or a photo. Friends can send Cheers and messages. Tap <strong>Stop</strong> to save the route summary, and browse your located check-ins in the Atlas.</div>
       </div>
     </div>
   </div>
@@ -149,38 +155,38 @@
 
 <section id="features">
   <div class="container">
-    <h2 class="section-h">What's in it</h2>
-    <p class="section-sub">The pieces that make CheersOida more than a check-in app.</p>
+    <h2 class="section-h">A record of places, not just a route</h2>
+    <p class="section-sub">Automatic venue stops, a personal check-in map, and friends along the way.</p>
     <div class="features">
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <div class="feature__title">Real route recording</div>
-        <div class="feature__body">Time-sampled GPS logs every second. Distance, dwell, and venue arrivals fall out of it.</div>
+        <div class="feature__title">Walking routes &amp; summaries</div>
+        <div class="feature__body">Start and stop a session yourself. Review the route, distance, duration, and venue visits afterwards.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-        <div class="feature__title">Dwell detection</div>
-        <div class="feature__body">Stops are detected, not tapped. The app tells "arrived at a bar" from "walked past one."</div>
+        <div class="feature__title">Venue discovery &amp; arrivals</div>
+        <div class="feature__body">Explore with venue data from OpenStreetMap. Stops are based on staying near a place, rather than a single passing GPS fix. Add a missing venue when you need to.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-        <div class="feature__title">Friends &amp; Cheers</div>
-        <div class="feature__body">A friend-only feed, real-time cheers on each check-in, push notifications with reply actions.</div>
+        <div class="feature__title">Friends, Cheers &amp; live location</div>
+        <div class="feature__body">Add friends by username, invitation, or QR code. Follow their check-ins and see the latest shared position of an active session, with its age and GPS accuracy.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg></span>
-        <div class="feature__title">German &amp; English</div>
-        <div class="feature__body">Built bilingual from the first screen. Same UI, copy, and notification actions in DE and EN.</div>
+        <div class="feature__title">Your Check-in Atlas</div>
+        <div class="feature__body">See your own located check-ins on a map. Filter by time, explore clusters, and open the entries behind each place. The interface is available in English and German.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg></span>
-        <div class="feature__title">Offline-first</div>
-        <div class="feature__body">GPS, check-ins, and photos queue locally and sync when the venue Wi-Fi finally gives up.</div>
+        <div class="feature__title">Saved locally, synced later</div>
+        <div class="feature__body">Tracking points and check-ins are saved on your phone. Pending check-ins and photo uploads retry when connected. Starting a session and social features need a connection; GPS and maps still depend on signal and cached data.</div>
       </div>
       <div class="feature">
         <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-        <div class="feature__title">Privacy by default</div>
-        <div class="feature__body">Raw GPS trace is owner-only. Friends see the simplified route, published once when the night ends.</div>
+        <div class="feature__title">Sharing controls &amp; data cleanup</div>
+        <div class="feature__body">Live sharing is on for new sessions; switch it off in the live screen. Keep your account when clearing activity history, or request full account deletion. The privacy page explains what is shared and how image links work.</div>
       </div>
     </div>
   </div>
@@ -188,12 +194,12 @@
 
 <section>
   <div class="container">
-    <h2 class="section-h">A look at the app</h2>
-    <p class="section-sub">Three screens from a real session.</p>
+    <h2 class="section-h">Inside CheersOida</h2>
+    <p class="section-sub">Illustrated previews of the current visual style, using example content. These are not device screenshots.</p>
     <div class="shots">
-      <div class="shot"><img src="assets/screenshots/screen-01.png" alt="CheersOida live session screen with route map" loading="lazy"></div>
-      <div class="shot"><img src="assets/screenshots/screen-02.png" alt="CheersOida activity detail with friends and cheers" loading="lazy"></div>
-      <div class="shot"><img src="assets/screenshots/screen-03.png" alt="CheersOida feed showing a friend's check-in" loading="lazy"></div>
+      <figure class="shot-preview"><div class="shot"><img src="assets/screenshots/screen-01.png" alt="Illustrated CheersOida feed with a venue check-in and a shared live session" width="780" height="1640" loading="lazy"></div><figcaption>Check-ins &amp; friends</figcaption></figure>
+      <figure class="shot-preview"><div class="shot"><img src="assets/screenshots/screen-02.png" alt="Illustrated Check-in Atlas with clustered visits and a time filter" width="780" height="1640" loading="lazy"></div><figcaption>Your Check-in Atlas</figcaption></figure>
+      <figure class="shot-preview"><div class="shot"><img src="assets/screenshots/screen-03.png" alt="Illustrated live session with a route, sharing control and venue stops" width="780" height="1640" loading="lazy"></div><figcaption>Live route &amp; venue stops</figcaption></figure>
     </div>
   </div>
 </section>
@@ -201,58 +207,36 @@
 <section id="faq">
   <div class="container">
     <h2 class="section-h">Questions</h2>
-    <p class="section-sub">The honest short answers.</p>
+    <p class="section-sub">How tracking, sharing, and your data actually work.</p>
     <div class="faq">
-
       <details class="faq__item" id="faq-data">
-        <summary class="faq__q">What data does the app collect?</summary>
-        <div class="faq__a">
-          <p>An account (email, username), a time-sampled GPS trace <em>while a crawl is active</em>, check-ins you create, photos you attach, your friend list, and a push-notification token. The full breakdown is on the <a href="privacy.html">privacy page</a>.</p>
-        </div>
+        <summary class="faq__q">What data does the app use?</summary>
+        <div class="faq__a"><p>An account, profile details, route points while a session is active, check-ins, optional photos and notes, friend connections, and notification tokens. Live sharing also uses a replaceable location point with a timestamp and accuracy. See the <a href="privacy.html">privacy page</a> for visibility, image links, providers, and deletion.</p></div>
       </details>
-
       <details class="faq__item" id="faq-route">
-        <summary class="faq__q">Can my friends see my route while I'm still out?</summary>
-        <div class="faq__a">
-          <p>No. Friends see only the simplified route, which is written <strong>once</strong>, when you end the night out. Mid-session, they see "out since 21:30, 3 check-ins" and nothing more.</p>
-        </div>
+        <summary class="faq__q">What can friends see while I am out?</summary>
+        <div class="faq__a"><p>New sessions share your latest position with accepted friends by default. Turn this off in the live screen for that session; each new session starts with sharing on again. Friends see the latest point, its age, and GPS accuracy—not a playback of your full live route. A point is marked stale after one minute and hidden after five. When online, switching sharing off or finishing removes it. If you stop offline, no new positions are sent and the last shared point expires within five minutes. Group participants can also receive latest positions for group features. Finished routes are available to accepted friends.</p></div>
       </details>
-
       <details class="faq__item" id="faq-accuracy">
-        <summary class="faq__q">How accurate is the "you arrived" detection?</summary>
-        <div class="faq__a">
-          <p>The app looks for actual dwell at a known venue, not a single GPS fix. Walk past a venue and nothing happens; sit down and it's added to your night out. Two venues ~15 m apart will prompt you to pick one instead of guessing.</p>
-        </div>
+        <summary class="faq__q">Will every venue visit be detected?</summary>
+        <div class="faq__a"><p>Not always. Arrival detection looks for repeated GPS fixes and time spent near a known venue. Poor reception, closely spaced venues, or missing map data can affect the result. You can add a missing venue, but there is no guarantee that every stop will be recognised.</p></div>
       </details>
-
       <details class="faq__item" id="faq-bg">
-        <summary class="faq__q">Does it use background location?</summary>
-        <div class="faq__a">
-          <p>Only <strong>while you have a crawl running</strong>, with your permission ("While using the app" plus an Android foreground service). The app does <strong>not</strong> ask for "Allow all the time" and does not track location when there's no active crawl.</p>
-        </div>
+        <summary class="faq__q">Does tracking continue with the screen off?</summary>
+        <div class="faq__a"><p>During an active session, tracking can continue in the background with your permission. Android uses a visible foreground service; iOS shows its location indicator. The app requests foreground/“While using” permission, not “Always”. Tap Stop to end session tracking. Check-ins can separately use your location when you choose to log one.</p></div>
       </details>
-
       <details class="faq__item" id="faq-offline">
-        <summary class="faq__q">Does it work offline / on a basement bar's Wi-Fi?</summary>
-        <div class="faq__a">
-          <p>Yes. GPS, check-ins, and photos are written to the device first, then uploaded through an outbox when the network returns. A night out in a basement with no signal works the same as one above ground.</p>
-        </div>
+        <summary class="faq__q">What works without a connection?</summary>
+        <div class="faq__a"><p>After a session has started, route points are stored locally. Check-ins and photo uploads can wait in the pending queue and retry when you reconnect. Starting a new session, live sharing, friend actions, new map tiles, and venue downloads require connectivity. Indoor or underground GPS reception can still be poor.</p></div>
       </details>
-
       <details class="faq__item" id="faq-battery">
-        <summary class="faq__q">Battery cost?</summary>
-        <div class="faq__a">
-          <p>Time-based sampling (one fix per second while active) costs about as much as a navigation app on a similar drive. The session ends when you tap Stop, so the cost is bounded to the night itself.</p>
-        </div>
+        <summary class="faq__q">How much battery does tracking use?</summary>
+        <div class="faq__a"><p>An active route uses GPS, background processing, and sometimes the network. Battery use varies with your phone, reception, and session length; there is no fixed consumption estimate. Tap Stop when you finish.</p></div>
       </details>
-
       <details class="faq__item" id="faq-delete">
-        <summary class="faq__q">Can I delete my data?</summary>
-        <div class="faq__a">
-          <p>Yes. The in-app account settings delete the account, all check-ins, all friendships, the raw GPS trace, and the simplified route. Deletion is final and runs immediately.</p>
-        </div>
+        <summary class="faq__q">Can I clear my activity without deleting my account?</summary>
+        <div class="faq__a"><p>Yes. <strong>Profile → Settings → Delete all my data</strong> removes activity history, route points, check-in photos, and the Cheers and messages attached to your content, while retaining your account, profile, friends, and notifications. <strong>Delete account</strong> also removes the account and profile. Cleanup needs a connection and may need a retry; it is not complete until the app confirms it. Email <a href="mailto:cheers@cheersoida.app">cheers@cheersoida.app</a> if you cannot access your account.</p></div>
       </details>
-
     </div>
   </div>
 </section>
@@ -260,19 +244,20 @@
 <section id="get">
   <div class="container">
     <h2 class="section-h">Get in touch</h2>
-    <p class="section-sub">App bug or feature request? Either channel works.</p>
+    <p class="section-sub">Report an app problem, ask about access, or get help with your account.</p>
     <div class="support">
       <a class="support__card" href="mailto:cheers@cheersoida.app">
         <div class="support__label">Email</div>
         <div class="support__title">cheers@cheersoida.app</div>
-        <div class="support__sub">Direct line to the developer</div>
+        <div class="support__sub">Accounts, access &amp; data requests</div>
       </a>
       <a class="support__card" href="https://github.com/checkelmann/cheersoida-website/issues">
         <div class="support__label">GitHub</div>
         <div class="support__title">Report a bug</div>
-        <div class="support__sub">App bugs and feedback</div>
+        <div class="support__sub">Bugs &amp; feature requests</div>
       </a>
     </div>
+    <p class="support-note">For account details or diagnostic logs containing personal information, use email rather than a public GitHub issue.</p>
   </div>
 </section>
 </main>
