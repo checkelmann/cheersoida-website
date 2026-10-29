@@ -5,12 +5,12 @@
 <h1 align="center">CheersOida</h1>
 
 <p align="center">
-  <strong>Track the night. Cheer the friends along the way.</strong>
+  <strong>Discover places. Track your route.</strong>
 </p>
 
 <p align="center">
   <a href="https://checkelmann.github.io/cheersoida-website/">
-    <img alt="Website" src="https://img.shields.io/badge/Website-cheersoida.app-F59E0B?style=flat-square">
+    <img alt="Website" src="https://img.shields.io/badge/Website-cheersoida.app-cf3b20?style=flat-square">
   </a>
   <a href="https://github.com/checkelmann/cheersoida-website/issues/new">
     <img alt="Report a bug" src="https://img.shields.io/badge/Issues-Welcome-brightgreen?style=flat-square">
@@ -23,11 +23,11 @@
 
 ## What is CheersOida?
 
-CheersOida maps your social outings — from venue to venue — and lets friends cheer you on along the way. Press **Start** before a night out and the app records the route you walk, detects when you arrive at each venue, and gives you a summary afterwards — distance, duration, venues visited, and your check-ins for the evening.
+CheersOida helps you keep track of the places you visit and discover somewhere new. Press **Start** before you head out to record your walking route and detect venue stops. Your route, visited places, and check-ins come together on a map, with a summary of distance and duration afterwards.
 
 ## Features
 
-- **GPS route** — every night out becomes a replayable polyline.
+- **GPS route** — keep a map of the paths you walk and the places you visit.
 - **Dwell detection** — arriving at a venue is the signal; walking past is not.
 - **Friends & Cheers** — your mates see your check-ins in real time and send a one-tap Cheers.
 - **Bilingual DE / EN** — owned and operated from Austria.
@@ -52,12 +52,12 @@ CheersOida maps your social outings — from venue to venue — and lets friends
 ## Deutsch
 
 <p align="center">
-  <strong>Verfolg die Nacht. Feier die Freunde auf dem Weg.</strong>
+  <strong>Orte entdecken. Routen festhalten.</strong>
 </p>
 
 <p align="center">
   <a href="https://checkelmann.github.io/cheersoida-website/de/">
-    <img alt="Webseite" src="https://img.shields.io/badge/Webseite-cheersoida.app-F59E0B?style=flat-square">
+    <img alt="Webseite" src="https://img.shields.io/badge/Webseite-cheersoida.app-cf3b20?style=flat-square">
   </a>
 </p>
 
@@ -67,11 +67,11 @@ CheersOida maps your social outings — from venue to venue — and lets friends
 
 ## Was ist CheersOida?
 
-CheersOida begleitet deine sozialen Abende — von Location zu Location — und lässt Freunde unterwegs mitmachen. Drück **Start** vor einem Abend und die App zeichnet die Route auf, erkennt die Ankunft an jeder Location und liefert danach eine Zusammenfassung — Distanz, Dauer, besuchte Locations und deine Check-ins des Abends.
+CheersOida hilft dir, besuchte Orte im Blick zu behalten und neue zu entdecken. Drück vor dem Losgehen auf **Start**, um deinen Fußweg aufzuzeichnen und Stopps an Locations zu erkennen. Deine Route, besuchte Orte und Check-ins kommen auf einer Karte zusammen. Danach siehst du eine Zusammenfassung mit Distanz und Dauer.
 
 ## Funktionen
 
-- **GPS-Route** — jeder Abend wird zu einer abspielbaren Polylinie.
+- **GPS-Route** — behalte deine Wege und besuchten Orte auf einer Karte.
 - **Dwell-Erkennung** — das Ankommen an einer Location ist das Signal; das Vorbeigehen zählt nicht.
 - **Friends & Cheers** — deine Freunde sehen deine Check-ins in Echtzeit und schicken einen Cheers mit einem Tap.
 - **Bilingual DE / EN** — aus Österreich, für Österreich und den DACH-Raum.

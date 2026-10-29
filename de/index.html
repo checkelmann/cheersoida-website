@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CheersOida — Verfolg die Nacht. Prost mit den Freunden.</title>
-  <meta name="description" content="CheersOida zeichnet deinen Abend auf, erkennt die Ankunft an jedem Ort und lässt deine Freunde in Echtzeit ein Prost schicken — ganz ohne was von dir zu wollen.">
-  <meta name="theme-color" content="#0B1220">
+  <title>CheersOida — Orte entdecken. Routen festhalten.</title>
+  <meta name="description" content="Entdecke Orte und behalte deine Besuche im Blick. CheersOida zeichnet deine Route auf, erkennt Stopps an Locations und zeigt deine Check-ins auf einer Karte.">
+  <meta name="theme-color" content="#14100c">
 
   <meta property="og:title" content="CheersOida">
-  <meta property="og:description" content="Verfolg die Nacht. Prost mit den Freunden.">
+  <meta property="og:description" content="Orte entdecken. Routen festhalten.">
   <meta property="og:image" content="https://checkelmann.github.io/cheersoida-website/assets/og-image.png">
   <meta property="og:url" content="https://checkelmann.github.io/cheersoida-website/de/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+  <link rel="preload" href="../assets/fonts/BricolageGrotesque_600SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../assets/fonts/Bitter_700Bold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -43,8 +45,8 @@
   <div class="container">
     <div class="hero__grid">
       <div>
-        <h1>Verfolg die Nacht.<br><span class="accent">Prost</span> mit den Freunden.</h1>
-        <p class="hero__lede">CheersOida zeichnet deinen Abend auf, erkennt die Ankunft an jedem Ort und lässt deine Freunde in Echtzeit ein <strong>Prost</strong> schicken — egal was du in der Hand hast.</p>
+        <h1>Orte entdecken.<br>Routen festhalten.</h1>
+        <p class="hero__lede">CheersOida zeichnet deine Route und Stopps an Locations auf. Behalte besuchte Orte im Blick, sieh sie auf der Karte und entdecke neue.</p>
         <div class="hero__ctas">
           <a class="btn btn--primary" href="#preview">App laden</a>
           <a class="btn btn--secondary" href="#ablauf">So läuft's ↓</a>
@@ -53,19 +55,18 @@
       <div class="map" aria-hidden="true">
         <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Stilisierte Karte mit einer Walking-Route und drei Location-Pins">
           <defs>
-            <radialGradient id="glow" cx="30%" cy="70%" r="60%">
-              <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35"/>
-              <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
-            </radialGradient>
+            <pattern id="receipt-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="1" fill="#1f1a13" opacity="0.14"/>
+            </pattern>
           </defs>
-          <rect width="320" height="240" fill="url(#glow)"/>
-          <polyline fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+          <rect width="320" height="240" fill="url(#receipt-grid)"/>
+          <polyline fill="none" stroke="#cf3b20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
             points="20,200 60,170 90,150 130,120 170,110 210,80 260,60 300,40" opacity="0.9"/>
-          <g><circle cx="20" cy="200" r="14" fill="#F59E0B" fill-opacity="0.18"/><circle cx="20" cy="200" r="5" fill="#F59E0B"/></g>
-          <g><circle cx="170" cy="110" r="14" fill="#F59E0B" fill-opacity="0.18"/><circle cx="170" cy="110" r="5" fill="#F59E0B"/>
-            <text x="184" y="106" fill="#FBBF24" font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="1.5">STOP</text>
+          <g><circle cx="20" cy="200" r="14" fill="#cf3b20"/><circle cx="20" cy="200" r="5" fill="#ffffff"/></g>
+          <g><circle cx="170" cy="110" r="14" fill="#cf3b20"/><circle cx="170" cy="110" r="5" fill="#ffffff"/>
+            <text x="184" y="106" fill="#5f5547" font-family="Space Mono, monospace" font-size="14" font-weight="700" letter-spacing="1.5">STOP</text>
           </g>
-          <g><circle cx="300" cy="40" r="14" fill="#F59E0B" fill-opacity="0.18"/><circle cx="300" cy="40" r="5" fill="#F59E0B"/></g>
+          <g><circle cx="300" cy="40" r="14" fill="#cf3b20"/><circle cx="300" cy="40" r="5" fill="#ffffff"/></g>
         </svg>
       </div>
     </div>
@@ -116,18 +117,18 @@
 
 <section id="ablauf">
   <div class="container">
-    <h2 class="section-h">So läuft eine Nacht</h2>
+    <h2 class="section-h">Von Ort zu Ort</h2>
     <p class="section-sub">Drei Dinge passieren, der Reihe nach. Das Langweilige macht die App.</p>
     <div class="steps">
       <div class="step">
         <div class="step__num">01</div>
-        <div class="step__title">Abend starten</div>
-        <div class="step__body">Tippe zu Beginn der Nacht auf <strong>Start</strong>. Die App schreibt sekündlich GPS-Fixes mit — der Akku ist der einzige Preis.</div>
+        <div class="step__title">Entdeckungstour starten</div>
+        <div class="step__body">Tippe vor dem Losgehen auf <strong>Start</strong>. CheersOida zeichnet deinen Fußweg auf, während du neue Orte erkundest.</div>
       </div>
       <div class="step">
         <div class="step__num">02</div>
         <div class="step__title">Ankommen, erkannt werden</div>
-        <div class="step__body">Wenn du tatsächlich an einem Ort bleibst — nicht nur vorbeiläufst — wird er zum Abend hinzugefügt. Kein Tippen nötig.</div>
+        <div class="step__body">Wenn du tatsächlich an einem Ort bleibst — nicht nur vorbeiläufst — wird er zu deiner Route hinzugefügt. Kein Tippen nötig.</div>
       </div>
       <div class="step">
         <div class="step__num">03</div>
