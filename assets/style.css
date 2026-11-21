@@ -280,7 +280,7 @@ section { padding-top: var(--section-y-mobile); padding-bottom: var(--section-y-
   font-weight: 700;}
 .section-sub a:hover { color: var(--text); }
 
-/* === Closed-preview section ========================================= */
+/* === Download section       ========================================= */
 .preview {
   display: grid;
   grid-template-columns: 1fr;
@@ -307,19 +307,6 @@ section { padding-top: var(--section-y-mobile); padding-bottom: var(--section-y-
   letter-spacing: 0.03em;
   border-bottom: 2px dashed var(--paper-divider);
   padding-bottom: 14px;}
-.preview__steps {
-  padding-left: 22px;
-  margin: 0;
-  counter-reset: step;
-}
-.preview__steps li {
-  color: var(--ink-dim);
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-.preview__steps li:last-child { margin-bottom: 0; }
-.preview__steps li strong { color: var(--ink); font-weight: 600; }
 
 /* === How it works =================================================== */
 .steps {
@@ -521,7 +508,6 @@ section { padding-top: var(--section-y-mobile); padding-bottom: var(--section-y-
 .hero__lede, .section-sub, .prose p { text-wrap: pretty; }
 .hero h1, .section-h { text-wrap: balance; }
 .stat:last-child .stat__num { color: var(--accent); }
-.preview__steps li::marker { font-family: var(--font-mono); font-weight: 700; }
 .faq__item[open] > .faq__q { border-bottom: 2px dashed var(--paper-divider); }
 .faq__item[open] > .faq__a { padding-top: 16px; }
 .faq__a a, .prose a { text-underline-offset: 3px; }

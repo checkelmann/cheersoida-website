@@ -21,11 +21,7 @@
 
 **iPhone** · [Download CheersOida on the App Store](https://apps.apple.com/app/cheersoida/id6809011689).
 
-**Android** · To join closed testing, use the same Google account for all three steps:
-
-1. [Join the CheersOida Google Group](https://groups.google.com/g/cheersoida).
-2. [Open the testing page in your browser](https://play.google.com/apps/testing/dev.heckelmann.cheersoida) and choose **Become a tester**.
-3. [Open CheersOida in the Play Store on your Android phone](https://play.google.com/store/apps/details?id=dev.heckelmann.cheersoida) and tap **Install**.
+**Android** · [Download CheersOida on Google Play](https://play.google.com/store/apps/details?id=dev.heckelmann.cheersoida).
 
 ## What is CheersOida?
 
@@ -77,11 +73,7 @@ Illustrations of the current visual style with example content; these are not de
 
 **iPhone** · [CheersOida im App Store laden](https://apps.apple.com/app/cheersoida/id6809011689).
 
-**Android** · Für den geschlossenen Test nutze bei allen drei Schritten dasselbe Google-Konto:
-
-1. [Tritt der CheersOida-Google-Gruppe bei](https://groups.google.com/g/cheersoida).
-2. [Öffne die Testseite im Browser](https://play.google.com/apps/testing/dev.heckelmann.cheersoida) und wähle **Tester werden**.
-3. [Öffne CheersOida auf deinem Android-Handy im Play Store](https://play.google.com/store/apps/details?id=dev.heckelmann.cheersoida) und tippe auf **Installieren**.
+**Android** · [CheersOida bei Google Play laden](https://play.google.com/store/apps/details?id=dev.heckelmann.cheersoida).
 
 ## Was ist CheersOida?
 
