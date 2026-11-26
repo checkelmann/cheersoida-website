@@ -1,5 +1,5 @@
 // CheersOida website — minimal interactions.
-// Navigation, FAQ links, and optional aggregate analytics.
+// Navigation, FAQ links, promo playback, and optional analytics.
 
 (function () {
   'use strict';
@@ -57,6 +57,30 @@
     }
   }
 
+  function initPromo() {
+    var video = document.querySelector('.hero__promo video');
+    if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    function play() {
+      video.play().catch(function () {
+        // Native controls remain available if the browser blocks autoplay.
+      });
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      play();
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      if (entries.some(function (entry) { return entry.isIntersecting; })) {
+        observer.disconnect();
+        if (video.paused) play();
+      }
+    }, { threshold: 0.25 });
+    observer.observe(video);
+  }
+
   function initAnalytics() {
     if (window.location.hostname !== 'cheersoida.app') return;
 
@@ -70,6 +94,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     initNavHighlight();
     initFaqDeepLink();
+    initPromo();
     initAnalytics();
   });
 })();

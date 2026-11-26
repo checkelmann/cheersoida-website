@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/logo-icon.png">
   <link rel="preload" href="../assets/fonts/BricolageGrotesque_600SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="../assets/fonts/Bitter_700Bold.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/style.css?v=2">
 </head>
 <body>
 
@@ -54,28 +54,25 @@
         <h1>Orte entdecken.<br>Routen festhalten.</h1>
         <p class="hero__lede">Entdecke Orte zu Fuß. CheersOida zeichnet deine Route auf, erkennt Stopps an Locations und sammelt deine Check-ins auf einer Karte. Teile den Ausflug mit Freunden und finde besuchte Orte später im Atlas wieder.</p>
         <div class="hero__ctas">
-          <a class="btn btn--primary" href="https://apps.apple.com/app/cheersoida/id6809011689">Im App Store laden</a>
-          <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=dev.heckelmann.cheersoida">Bei Google Play laden</a>
+          <div class="store-badges">
+            <a href="https://apps.apple.com/app/cheersoida/id6809011689">
+              <img src="../assets/store/app-store-de.svg" alt="Im App Store laden" width="144" height="48">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=dev.heckelmann.cheersoida">
+              <img src="../assets/store/google-play-de.svg" alt="Jetzt bei Google Play" width="162" height="48">
+            </a>
+          </div>
           <a class="btn btn--secondary" href="#ablauf">So läuft's ↓</a>
         </div>
       </div>
-      <div class="map" aria-hidden="true">
-        <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Stilisierte Karte mit einer Walking-Route und drei Location-Pins">
-          <defs>
-            <pattern id="receipt-grid" width="22" height="22" patternUnits="userSpaceOnUse">
-              <circle cx="1" cy="1" r="1" fill="#1f1a13" opacity="0.14"/>
-            </pattern>
-          </defs>
-          <rect width="320" height="240" fill="url(#receipt-grid)"/>
-          <polyline fill="none" stroke="#cf3b20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-            points="20,200 60,170 90,150 130,120 170,110 210,80 260,60 300,40" opacity="0.9"/>
-          <g><circle cx="20" cy="200" r="14" fill="#cf3b20"/><circle cx="20" cy="200" r="5" fill="#ffffff"/></g>
-          <g><circle cx="170" cy="110" r="14" fill="#cf3b20"/><circle cx="170" cy="110" r="5" fill="#ffffff"/>
-            <text x="184" y="106" fill="#5f5547" font-family="Space Mono, monospace" font-size="14" font-weight="700" letter-spacing="1.5">STOP</text>
-          </g>
-          <g><circle cx="300" cy="40" r="14" fill="#cf3b20"/><circle cx="300" cy="40" r="5" fill="#ffffff"/></g>
-        </svg>
-      </div>
+      <figure class="hero__promo">
+        <video width="1280" height="720" preload="none" poster="../assets/promo/cheersoida-poster.webp"
+          muted loop playsinline controls aria-label="CheersOida-Werbevideo auf Englisch">
+          <source src="../assets/promo/cheersoida-promo.mp4" type="video/mp4">
+        </video>
+        <figcaption>Musik: „Happy Beats &amp; Business Moves Vol. 11“ von <a href="https://ende.app/en/song/12876-happy-beats-business-moves-vol-11">Sascha Ende</a> ·
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Gekürzt und ausgeblendet.</figcaption>
+      </figure>
     </div>
 
     <div class="stats">
@@ -246,13 +243,16 @@
 
 <footer class="foot">
   <div class="container foot__inner">
-    <div>© 2026 CheersOida</div>
+    <div>
+      © 2026 CheersOida
+      <small class="foot__marks">Apple und das Apple-Logo sind Marken von Apple Inc. App Store ist eine Dienstleistungsmarke von Apple Inc. Google Play ist eine Marke von Google LLC.</small>
+    </div>
     <div class="foot__links">
       <a href="privacy.html">Datenschutz</a>
     </div>
   </div>
 </footer>
 
-<script src="../assets/main.js?v=2" defer></script>
+<script src="../assets/main.js?v=3" defer></script>
 </body>
 </html>
