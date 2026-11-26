@@ -58,13 +58,12 @@
   }
 
   function initAnalytics() {
-    var goatCounterSite = 'cheersoida';
-    if (!goatCounterSite || window.location.hostname !== 'cheersoida.app') return;
+    if (window.location.hostname !== 'cheersoida.app') return;
 
     var script = document.createElement('script');
     script.async = true;
-    script.setAttribute('data-goatcounter', 'https://' + goatCounterSite + '.goatcounter.com/count');
-    script.src = 'https://gc.zgo.at/count.js';
+    script.dataset.site = 'cheersoida.app';
+    script.src = 'https://stats.cheersoida.app/count.js';
     document.head.appendChild(script);
   }
 
