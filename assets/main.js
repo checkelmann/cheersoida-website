@@ -1,6 +1,5 @@
 // CheersOida website — minimal interactions.
-// Two responsibilities: FAQ accordion + active-section nav highlight.
-// Both are progressive enhancement; site works without JS.
+// Navigation, FAQ links, and optional aggregate analytics.
 
 (function () {
   'use strict';
@@ -58,8 +57,20 @@
     }
   }
 
+  function initAnalytics() {
+    var goatCounterSite = 'cheersoida';
+    if (!goatCounterSite || window.location.hostname !== 'cheersoida.app') return;
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.setAttribute('data-goatcounter', 'https://' + goatCounterSite + '.goatcounter.com/count');
+    script.src = 'https://gc.zgo.at/count.js';
+    document.head.appendChild(script);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initNavHighlight();
     initFaqDeepLink();
+    initAnalytics();
   });
 })();
